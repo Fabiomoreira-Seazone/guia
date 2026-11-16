@@ -48,6 +48,51 @@ class TestValidar(unittest.TestCase):
         d["imoveis"]["imoveis"][0]["wifi"] = "rede123"
         self.assertTrue(validar(d))
 
+    def com_predio(self):
+        d = self.d()
+        d["predios"] = {"predios": [{"id": "tvt", "nome": "Top Vision Tower", "endereco": "Rua Y",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Y",
+            "como_chegar": T, "acesso": T, "estacionamento": T,
+            "estacionamento_maps_url": "https://www.google.com/maps/search/?api=1&query=Z"}]}
+        im = d["imoveis"]["imoveis"][0]
+        for k in ("nome", "endereco", "maps_url", "como_chegar", "estacionamento"):
+            del im[k]
+        im["predio"] = "tvt"
+        return d
+
+    def test_aceita_imovel_que_herda_do_predio(self):
+        self.assertEqual(validar(self.com_predio()), [])
+
+    def test_rejeita_predio_inexistente(self):
+        d = self.com_predio()
+        d["imoveis"]["imoveis"][0]["predio"] = "xxx"
+        self.assertTrue(any("xxx" in e for e in validar(d)))
+
+    def test_rejeita_texto_do_predio_sem_idioma(self):
+        d = self.com_predio()
+        del d["predios"]["predios"][0]["acesso"]["es"]
+        self.assertTrue(any('"es"' in e for e in validar(d)))
+
+    def test_rejeita_lixo_sem_idioma(self):
+        d = self.com_predio()
+        d["predios"]["predios"][0]["lixo"] = {"pt": "G1", "es": "G1"}
+        self.assertTrue(any('"en"' in e for e in validar(d)))
+
+    def test_rejeita_maps_da_garagem_invalido(self):
+        d = self.com_predio()
+        d["predios"]["predios"][0]["estacionamento_maps_url"] = "http://x"
+        self.assertTrue(validar(d))
+
+    def test_rejeita_imovel_sem_endereco_nem_predio(self):
+        d = self.d()
+        del d["imoveis"]["imoveis"][0]["maps_url"]
+        self.assertTrue(validar(d))
+
+    def test_rejeita_senha_no_predio(self):
+        d = self.com_predio()
+        d["predios"]["predios"][0]["acesso"] = {"pt": "senha 1234", "es": "x", "en": "x"}
+        self.assertTrue(validar(d))
+
     def test_rejeita_evento_com_fim_antes_do_inicio(self):
         d = self.d()
         d["eventos"]["eventos"][0]["data_fim"] = "2026-11-19"

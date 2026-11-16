@@ -1724,21 +1724,8 @@
   },
   {
    "codigo": "TVT1008",
-   "nome": "Felipe Schmidt 869",
-   "endereco": "Felipe Schmidt 869 – Florianópolis/SC",
-   "maps_url": "https://www.google.com/maps/search/?api=1&query=Felipe%20Schmidt%20869%2C%20Florian%C3%B3polis%20-%20SC",
    "checkin": "15h",
    "checkout": "11h",
-   "como_chegar": {
-    "pt": "O endereço está no mapa acima. As instruções de acesso ao prédio e ao apartamento chegam na mensagem de check-in.",
-    "es": "La dirección está en el mapa de arriba. Las instrucciones de acceso al edificio y al apartamento llegan en el mensaje de check-in.",
-    "en": "The address is on the map above. Building and apartment access instructions arrive in your check-in message."
-   },
-   "estacionamento": {
-    "pt": "Confira na mensagem de check-in se a sua reserva inclui vaga de garagem.",
-    "es": "Revisa en el mensaje de check-in si tu reserva incluye cochera.",
-    "en": "Check your check-in message to see whether your booking includes a parking spot."
-   },
    "regras": [
     {
      "pt": "Silêncio entre 22h e 8h, respeitando os vizinhos.",
@@ -1761,25 +1748,13 @@
      "en": "When you leave, please turn off the A/C and lights."
     }
    ],
-   "contato_whatsapp": ""
+   "contato_whatsapp": "",
+   "predio": "tvt"
   },
   {
    "codigo": "TVT1009",
-   "nome": "Felipe Schmidt 869",
-   "endereco": "Felipe Schmidt 869 – Florianópolis/SC",
-   "maps_url": "https://www.google.com/maps/search/?api=1&query=Felipe%20Schmidt%20869%2C%20Florian%C3%B3polis%20-%20SC",
    "checkin": "15h",
    "checkout": "11h",
-   "como_chegar": {
-    "pt": "O endereço está no mapa acima. As instruções de acesso ao prédio e ao apartamento chegam na mensagem de check-in.",
-    "es": "La dirección está en el mapa de arriba. Las instrucciones de acceso al edificio y al apartamento llegan en el mensaje de check-in.",
-    "en": "The address is on the map above. Building and apartment access instructions arrive in your check-in message."
-   },
-   "estacionamento": {
-    "pt": "Confira na mensagem de check-in se a sua reserva inclui vaga de garagem.",
-    "es": "Revisa en el mensaje de check-in si tu reserva incluye cochera.",
-    "en": "Check your check-in message to see whether your booking includes a parking spot."
-   },
    "regras": [
     {
      "pt": "Silêncio entre 22h e 8h, respeitando os vizinhos.",
@@ -1802,25 +1777,13 @@
      "en": "When you leave, please turn off the A/C and lights."
     }
    ],
-   "contato_whatsapp": ""
+   "contato_whatsapp": "",
+   "predio": "tvt"
   },
   {
    "codigo": "TVT1403",
-   "nome": "Felipe Schmidt 869",
-   "endereco": "Felipe Schmidt 869 – Florianópolis/SC",
-   "maps_url": "https://www.google.com/maps/search/?api=1&query=Felipe%20Schmidt%20869%2C%20Florian%C3%B3polis%20-%20SC",
    "checkin": "15h",
    "checkout": "11h",
-   "como_chegar": {
-    "pt": "O endereço está no mapa acima. As instruções de acesso ao prédio e ao apartamento chegam na mensagem de check-in.",
-    "es": "La dirección está en el mapa de arriba. Las instrucciones de acceso al edificio y al apartamento llegan en el mensaje de check-in.",
-    "en": "The address is on the map above. Building and apartment access instructions arrive in your check-in message."
-   },
-   "estacionamento": {
-    "pt": "Confira na mensagem de check-in se a sua reserva inclui vaga de garagem.",
-    "es": "Revisa en el mensaje de check-in si tu reserva incluye cochera.",
-    "en": "Check your check-in message to see whether your booking includes a parking spot."
-   },
    "regras": [
     {
      "pt": "Silêncio entre 22h e 8h, respeitando os vizinhos.",
@@ -1843,25 +1806,13 @@
      "en": "When you leave, please turn off the A/C and lights."
     }
    ],
-   "contato_whatsapp": ""
+   "contato_whatsapp": "",
+   "predio": "tvt"
   },
   {
    "codigo": "TVT904",
-   "nome": "Felipe Schmidt 869",
-   "endereco": "Felipe Schmidt 869 – Florianópolis/SC",
-   "maps_url": "https://www.google.com/maps/search/?api=1&query=Felipe%20Schmidt%20869%2C%20Florian%C3%B3polis%20-%20SC",
    "checkin": "15h",
    "checkout": "11h",
-   "como_chegar": {
-    "pt": "O endereço está no mapa acima. As instruções de acesso ao prédio e ao apartamento chegam na mensagem de check-in.",
-    "es": "La dirección está en el mapa de arriba. Las instrucciones de acceso al edificio y al apartamento llegan en el mensaje de check-in.",
-    "en": "The address is on the map above. Building and apartment access instructions arrive in your check-in message."
-   },
-   "estacionamento": {
-    "pt": "Confira na mensagem de check-in se a sua reserva inclui vaga de garagem.",
-    "es": "Revisa en el mensaje de check-in si tu reserva incluye cochera.",
-    "en": "Check your check-in message to see whether your booking includes a parking spot."
-   },
    "regras": [
     {
      "pt": "Silêncio entre 22h e 8h, respeitando os vizinhos.",
@@ -1884,7 +1835,8 @@
      "en": "When you leave, please turn off the A/C and lights."
     }
    ],
-   "contato_whatsapp": ""
+   "contato_whatsapp": "",
+   "predio": "tvt"
   },
   {
    "codigo": "UBS0502",

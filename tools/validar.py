@@ -45,7 +45,7 @@ def validar(dados):
     for k, v in ui.items():
         _texto(v, f"ui.{k}", erros)
     _sem_senha({k: v for k, v in ui.items() if k not in UI_LIBERADA}, "ui", erros)
-    for nome in ("guia", "eventos", "imoveis"):
+    for nome in ("guia", "eventos", "imoveis", "predios"):
         _sem_senha(dados.get(nome, {}), nome, erros)
 
     for c in dados.get("guia", {}).get("categorias", []):
@@ -68,13 +68,27 @@ def validar(dados):
         elif fim < ini:
             erros.append(f"{onde}: data_fim antes de data_inicio")
 
+    predios = {p.get("id"): p for p in dados.get("predios", {}).get("predios", [])}
     for im in dados.get("imoveis", {}).get("imoveis", []):
         onde = f"imoveis.{im.get('codigo')}"
         if not re.fullmatch(r"[A-Z0-9]+", str(im.get("codigo", ""))):
             erros.append(f"{onde}: código inválido")
-        _maps(im.get("maps_url"), onde, erros)
+        base = {}
+        if "predio" in im:
+            if im["predio"] not in predios:
+                erros.append(f"{onde}: prédio {im['predio']!r} não existe em predios.json")
+            base = predios.get(im["predio"], {})
+        ef = dict(base, **im)  # o imóvel sobrescreve o prédio
+        if not ef.get("nome"):
+            erros.append(f"{onde}: falta nome")
+        _maps(ef.get("maps_url"), onde, erros)
         for campo in ("como_chegar", "estacionamento"):
-            _texto(im.get(campo), f"{onde}.{campo}", erros)
+            _texto(ef.get(campo), f"{onde}.{campo}", erros)
+        for campo in ("acesso", "lixo"):
+            if campo in ef:
+                _texto(ef[campo], f"{onde}.{campo}", erros)
+        if "estacionamento_maps_url" in ef:
+            _maps(ef["estacionamento_maps_url"], f"{onde}.estacionamento", erros)
         for j, r in enumerate(im.get("regras", [])):
             _texto(r, f"{onde}.regras[{j}]", erros)
     return erros
@@ -83,7 +97,7 @@ def validar(dados):
 def main():
     site = Path(__file__).resolve().parent.parent / "site"
     dados = {n: json.loads((site / "data" / f"{n}.json").read_text("utf-8"))
-             for n in ("guia", "eventos", "imoveis", "ui")}
+             for n in ("guia", "eventos", "imoveis", "ui", "predios")}
     erros = validar(dados)
     for im in dados["imoveis"].get("imoveis", []):
         if not (site / im["codigo"] / "index.html").exists():

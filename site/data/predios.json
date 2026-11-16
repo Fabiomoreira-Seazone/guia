@@ -1,0 +1,31 @@
+{
+ "predios": [
+  {
+   "id": "tvt",
+   "nome": "Top Vision Tower",
+   "endereco": "Rua Felipe Schmidt, 869 – Centro, Florianópolis/SC",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Rua%20Felipe%20Schmidt%2C%20869%2C%20Florian%C3%B3polis%20-%20SC",
+   "acesso": {
+    "pt": "Antes de chegar, faça o cadastro facial pelo link que enviamos no WhatsApp. Ele libera a garagem, o condomínio e as áreas comuns (não deixe de conhecer a piscina!). O apartamento abre com fechadura eletrônica.",
+    "es": "Antes de llegar, haz el registro facial con el enlace que te enviamos por WhatsApp. Te da acceso a la cochera, al edificio y a las áreas comunes (¡no te pierdas la piscina!). El apartamento se abre con cerradura electrónica.",
+    "en": "Before you arrive, complete the facial registration using the link we sent on WhatsApp. It gives you access to the garage, the building and the common areas (don't miss the pool!). The apartment has an electronic lock."
+   },
+   "como_chegar": {
+    "pt": "A pé, use a entrada TOWER, em frente à praça de alimentação e perto da entrada do Supermercado Angeloni. Vindo pela Felipe Schmidt, ao ver o acesso do Top Vision Residence, suba as escadas à DIREITA. A entrada fica depois do próximo lance de escadas, à sua esquerda.",
+    "es": "A pie, usa la entrada TOWER, frente al patio de comidas y cerca de la entrada del Supermercado Angeloni. Viniendo por la Felipe Schmidt, al ver el acceso del Top Vision Residence, sube las escaleras a la DERECHA. La entrada está después del siguiente tramo de escaleras, a tu izquierda.",
+    "en": "On foot, use the TOWER entrance, facing the food court near the Angeloni Supermarket entrance. Coming along Felipe Schmidt, when you see the Top Vision Residence entrance, take the stairs on the RIGHT. The entrance is after the next flight of stairs, on your left."
+   },
+   "estacionamento": {
+    "pt": "A garagem fica na Rua Conselheiro Mafra, no portão ao lado da entrada de veículos do Supermercado Angeloni. Vindo pela Felipe Schmidt, passe a entrada do Top Vision Residence e siga até o próximo semáforo. Vire à ESQUERDA, depois à ESQUERDA de novo, e o portão fica logo em seguida, à ESQUERDA. O número da sua vaga vai na mensagem de check-in; se ela estiver ocupada, pode usar qualquer outra.",
+    "es": "La cochera está en la Rua Conselheiro Mafra, en el portón junto a la entrada de vehículos del Supermercado Angeloni. Viniendo por la Felipe Schmidt, pasa la entrada del Top Vision Residence y sigue hasta el próximo semáforo. Gira a la IZQUIERDA, otra vez a la IZQUIERDA, y el portón queda enseguida a la IZQUIERDA. El número de tu cochera va en el mensaje de check-in; si está ocupada, puedes usar cualquier otra.",
+    "en": "The garage is on Rua Conselheiro Mafra, at the gate next to the Angeloni Supermarket vehicle entrance. Coming along Felipe Schmidt, drive past the Top Vision Residence entrance to the next traffic light. Turn LEFT, then LEFT again, and the gate is right after that on your LEFT. Your parking spot number is in your check-in message; if it's taken, you can use any other spot."
+   },
+   "estacionamento_maps_url": "https://www.google.com/maps/search/?api=1&query=Rua%20Conselheiro%20Mafra%2C%20849%2C%20Florian%C3%B3polis%20-%20SC",
+   "lixo": {
+    "pt": "O depósito de lixo fica no G1, ao lado do portão de saída. Por gentileza, leve todo o seu lixo ao sair. Obrigado!",
+    "es": "El depósito de basura está en el G1, junto al portón de salida. Por favor, lleva toda tu basura al salir. ¡Gracias!",
+    "en": "The trash room is on level G1, next to the exit gate. Please take all your trash with you when you leave. Thank you!"
+   }
+  }
+ ]
+}
