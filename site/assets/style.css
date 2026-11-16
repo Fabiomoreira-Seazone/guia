@@ -12,12 +12,12 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0f171c; --card: #172229; --ink: #e8eef1; --muted: #9fb0ba;
-    --line: #26343c; --accent: #4fb6d3; --accent-ink: #06222b; --sand: #1d2b33; --whats: #3fbf74;
+    --line: #26343c; --accent: #4fb6d3; --accent-ink: #06222b; --sand: #1d2b33; --whats: #3fbf74; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0f171c; --card: #172229; --ink: #e8eef1; --muted: #9fb0ba;
-  --line: #26343c; --accent: #4fb6d3; --accent-ink: #06222b; --sand: #1d2b33; --whats: #3fbf74;
+  --line: #26343c; --accent: #4fb6d3; --accent-ink: #06222b; --sand: #1d2b33; --whats: #3fbf74; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
