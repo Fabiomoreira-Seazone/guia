@@ -108,6 +108,11 @@
     }).join("") + "</ul>";
   }
 
+  function botaoContato(tipo, numero, titulo, desc, lang) {
+    return '<a class="contato ' + tipo + '" href="https://wa.me/' + esc(numero) + '" target="_blank" rel="noopener"><strong>' +
+      esc(titulo[lang]) + "</strong><span>" + esc(desc[lang]) + "</span></a>";
+  }
+
   function htmlImovel(im, ui, lang) {
     if (!im) return '<section class="card aviso">' + esc(ui.imovel_nao_encontrado[lang]) + "</section>";
     var regras = (im.regras || []).map(function (r) { return "<li>" + esc(r[lang]) + "</li>"; }).join("");
@@ -132,7 +137,10 @@
       (im.estacionamento_maps_url ? botaoMaps(im.estacionamento_maps_url, ui, lang, ui.garagem_maps) : "") +
       (im.lixo ? "<h3>" + esc(ui.lixo[lang]) + "</h3><p>" + esc(im.lixo[lang]) + "</p>" : "") +
       (regras ? "<h3>" + esc(ui.regras[lang]) + "</h3><ul>" + regras + "</ul>" : "") +
-      (im.contato_whatsapp ? '<a class="whats" href="https://wa.me/' + esc(im.contato_whatsapp) + '" target="_blank" rel="noopener">' + esc(ui.contato[lang]) + "</a>" : "") +
+      "<h3>" + esc(ui.contato[lang]) + '</h3><div class="contatos">' +
+      (im.contato_whatsapp ? botaoContato("anfitriao", im.contato_whatsapp, ui.contato_anfitriao, ui.contato_anfitriao_desc, lang) : "") +
+      botaoContato("seazone", ui.atendimento_numero.pt.replace(/\D/g, ""), ui.contato_seazone, ui.contato_seazone_desc, lang) +
+      "</div>" +
       "</section>";
   }
 

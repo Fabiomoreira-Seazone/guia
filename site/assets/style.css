@@ -93,6 +93,12 @@ h3 { font-size: 17px; margin: 0 0 4px; }
 .maps svg { width: 16px; height: 16px; fill: currentColor; }
 .link { border: 1px solid var(--line); color: var(--ink); }
 .whats { background: var(--whats); color: #fff; margin-top: 16px; }
+.contatos { display: grid; gap: 10px; margin-top: 6px; }
+.contato { display: block; text-decoration: none; color: #fff; border-radius: 14px; padding: 12px 16px; }
+.contato strong { display: block; font-size: 16px; }
+.contato span { display: block; font-size: 14px; opacity: .92; }
+.contato.anfitriao { background: var(--whats); }
+.contato.seazone { background: var(--sz-blue); }
 /* Galeria do prédio: carrossel com scroll-snap ocupando o topo do cartão. */
 .card.com-galeria { padding-top: 0; overflow: hidden; }
 .galeria {
