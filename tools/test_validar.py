@@ -98,6 +98,21 @@ class TestValidar(unittest.TestCase):
         d["predios"]["predios"][0]["estacionamento_foto"] = f
         self.assertTrue(validar(d))
 
+    def test_aceita_galeria(self):
+        d = self.com_predio()
+        d["predios"]["predios"][0]["galeria"] = [{"src": "img/tvt-piscina.jpg", "alt": T}]
+        self.assertEqual(validar(d), [])
+
+    def test_rejeita_foto_da_galeria_sem_alt(self):
+        d = self.com_predio()
+        d["predios"]["predios"][0]["galeria"] = [{"src": "img/a.jpg", "alt": {"pt": "a", "en": "a"}}]
+        self.assertTrue(any("galeria" in e and '"es"' in e for e in validar(d)))
+
+    def test_rejeita_galeria_com_link_externo(self):
+        d = self.com_predio()
+        d["predios"]["predios"][0]["galeria"] = [{"src": "https://a0.muscache.com/x.jpg", "alt": T}]
+        self.assertTrue(validar(d))
+
     def test_rejeita_maps_da_garagem_invalido(self):
         d = self.com_predio()
         d["predios"]["predios"][0]["estacionamento_maps_url"] = "http://x"

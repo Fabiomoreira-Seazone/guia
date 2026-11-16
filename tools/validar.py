@@ -26,6 +26,12 @@ def _maps(v, onde, erros):
         erros.append(f"{onde}: maps_url inválido ({v!r})")
 
 
+def _foto(f, onde, erros):
+    if not re.fullmatch(r"img/[\w.-]+\.(jpg|jpeg|png|webp)", str(f.get("src", ""))):
+        erros.append(f"{onde}: src deve ser img/<arquivo> ({f.get('src')!r})")
+    _texto(f.get("alt"), f"{onde}.alt", erros)
+
+
 def _sem_senha(v, onde, erros):
     if isinstance(v, dict):
         for k, x in v.items():
@@ -88,10 +94,9 @@ def validar(dados):
             if campo in ef:
                 _texto(ef[campo], f"{onde}.{campo}", erros)
         if "estacionamento_foto" in ef:
-            f = ef["estacionamento_foto"]
-            if not re.fullmatch(r"img/[\w.-]+\.(jpg|jpeg|png|webp)", str(f.get("src", ""))):
-                erros.append(f"{onde}.estacionamento_foto: src deve ser img/<arquivo> ({f.get('src')!r})")
-            _texto(f.get("alt"), f"{onde}.estacionamento_foto.alt", erros)
+            _foto(ef["estacionamento_foto"], f"{onde}.estacionamento_foto", erros)
+        for j, f in enumerate(ef.get("galeria", [])):
+            _foto(f, f"{onde}.galeria[{j}]", erros)
         if "estacionamento_maps_url" in ef:
             _maps(ef["estacionamento_maps_url"], f"{onde}.estacionamento", erros)
         for j, r in enumerate(im.get("regras", [])):
@@ -108,9 +113,10 @@ def main():
         if not (site / im["codigo"] / "index.html").exists():
             erros.append(f"falta a página site/{im['codigo']}/index.html")
     for p in dados["predios"].get("predios", []) + dados["imoveis"].get("imoveis", []):
-        src = (p.get("estacionamento_foto") or {}).get("src")
-        if src and not (site / src).exists():
-            erros.append(f"falta o arquivo de foto site/{src}")
+        fotos = [p.get("estacionamento_foto") or {}] + p.get("galeria", [])
+        for src in filter(None, (f.get("src") for f in fotos)):
+            if not (site / src).exists():
+                erros.append(f"falta o arquivo de foto site/{src}")
     for e in erros:
         print("ERRO:", e)
     print("OK" if not erros else f"{len(erros)} erro(s)")

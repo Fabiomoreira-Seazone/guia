@@ -89,6 +89,19 @@ h3 { font-size: 17px; margin: 0 0 4px; }
 .maps svg { width: 16px; height: 16px; fill: currentColor; }
 .link { border: 1px solid var(--line); color: var(--ink); }
 .whats { background: var(--whats); color: #fff; margin-top: 16px; }
+/* Galeria do prédio: carrossel com scroll-snap ocupando o topo do cartão. */
+.card.com-galeria { padding-top: 0; overflow: hidden; }
+.galeria {
+  display: flex; gap: 6px; overflow-x: auto; scroll-snap-type: x mandatory;
+  margin: 0 -18px 16px; padding: 0; -webkit-overflow-scrolling: touch; scrollbar-width: none;
+}
+.galeria::-webkit-scrollbar { display: none; }
+.galeria img {
+  flex: 0 0 88%; width: 88%; max-width: 100%; aspect-ratio: 3 / 2; object-fit: cover;
+  scroll-snap-align: start; display: block;
+}
+.galeria img:only-child { flex-basis: 100%; width: 100%; }
+.galeria:focus-visible { outline: 3px solid var(--sz-coral); outline-offset: -3px; }
 .foto { margin: 8px 0 10px; }
 .foto img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
 .foto figcaption { font-size: 12px; color: var(--muted); margin-top: 4px; }

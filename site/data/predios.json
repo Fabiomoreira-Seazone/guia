@@ -34,7 +34,41 @@
      "en": "Street view on Rua Conselheiro Mafra with the Top Vision Tower garage gate circled in red, next to the public parking entrance."
     },
     "credito": "Imagem: Google Street View"
-   }
+   },
+   "galeria": [
+    {
+     "src": "img/tvt-piscina.jpg",
+     "alt": {
+      "pt": "Piscina de borda infinita no rooftop do Top Vision Tower, com vista para a cidade.",
+      "es": "Piscina de borde infinito en la azotea del Top Vision Tower, con vista a la ciudad.",
+      "en": "Infinity pool on the Top Vision Tower rooftop overlooking the city."
+     }
+    },
+    {
+     "src": "img/tvt-vista-ponte.jpg",
+     "alt": {
+      "pt": "Vista da varanda para a baía e a ponte, com os morros ao fundo.",
+      "es": "Vista desde el balcón a la bahía y el puente, con los cerros al fondo.",
+      "en": "Balcony view of the bay and the bridge, with the hills behind."
+     }
+    },
+    {
+     "src": "img/tvt-varanda.jpg",
+     "alt": {
+      "pt": "Varanda do estúdio com vista para o mar e a Ponte Hercílio Luz.",
+      "es": "Balcón del estudio con vista al mar y al Puente Hercílio Luz.",
+      "en": "Studio balcony with views of the sea and Hercílio Luz Bridge."
+     }
+    },
+    {
+     "src": "img/tvt-studio.jpg",
+     "alt": {
+      "pt": "Estúdio integrado com cozinha, bancada e cama, iluminado pela janela da varanda.",
+      "es": "Estudio integrado con cocina, isla y cama, iluminado por el ventanal del balcón.",
+      "en": "Open-plan studio with kitchen, island and bed, lit by the balcony window."
+     }
+    }
+   ]
   }
  ]
 }

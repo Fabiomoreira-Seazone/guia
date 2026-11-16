@@ -47,15 +47,25 @@
 
   function htmlFoto(f, lang) {
     if (!f) return "";
-    var src = (window.FOTOS && window.FOTOS[f.src]) || (window.BASE || "./") + f.src;
-    return '<figure class="foto"><img src="' + esc(src) + '" alt="' + esc(f.alt[lang]) + '" loading="lazy">' +
+    return '<figure class="foto"><img src="' + esc(srcFoto(f.src)) + '" alt="' + esc(f.alt[lang]) + '" loading="lazy">' +
       (f.credito ? "<figcaption>" + esc(f.credito) + "</figcaption>" : "") + "</figure>";
+  }
+
+  function srcFoto(src) {
+    return (window.FOTOS && window.FOTOS[src]) || (window.BASE || "./") + src;
+  }
+
+  function htmlGaleria(g, lang) {
+    if (!g || !g.length) return "";
+    return '<div class="galeria" tabindex="0" aria-label="Fotos">' + g.map(function (f, i) {
+      return '<img src="' + esc(srcFoto(f.src)) + '" alt="' + esc(f.alt[lang]) + '"' + (i ? ' loading="lazy"' : "") + ">";
+    }).join("") + "</div>";
   }
 
   function htmlImovel(im, ui, lang) {
     if (!im) return '<section class="card aviso">' + esc(ui.imovel_nao_encontrado[lang]) + "</section>";
     var regras = (im.regras || []).map(function (r) { return "<li>" + esc(r[lang]) + "</li>"; }).join("");
-    return '<section class="card imovel">' +
+    return '<section class="card imovel' + (im.galeria && im.galeria.length ? " com-galeria" : "") + '">' + htmlGaleria(im.galeria, lang) +
       '<p class="eyebrow">' + esc(ui.seu_imovel[lang]) + "</p>" +
       "<h2>" + esc(im.nome) + "</h2>" +
       '<p class="endereco">' + esc(im.endereco) + "</p>" +
