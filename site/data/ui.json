@@ -1,6 +1,8 @@
 {
   "titulo": {"pt": "Guia do Centro de Florianópolis", "es": "Guía del Centro de Florianópolis", "en": "Downtown Florianópolis Guide"},
   "subtitulo": {"pt": "Dicas para aproveitar a Ilha da Magia a pé", "es": "Consejos para disfrutar la Isla de la Magia a pie", "en": "Tips to enjoy the Magic Island on foot"},
+  "bem_vindo": {"pt": "Bem-vindo ao", "es": "Bienvenido al", "en": "Welcome to"},
+  "subtitulo_imovel": {"pt": "Sua estadia começa agora!", "es": "¡Tu estadía empieza ahora!", "en": "Your stay starts now!"},
   "abrir_maps": {"pt": "Abrir no Google Maps", "es": "Abrir en Google Maps", "en": "Open in Google Maps"},
   "eventos": {"pt": "Agenda", "es": "Agenda", "en": "What's on"},
   "sem_eventos": {"pt": "Agenda em atualização. Volte em breve!", "es": "Agenda en actualización. ¡Vuelve pronto!", "en": "Schedule being updated. Check back soon!"},

@@ -167,9 +167,6 @@
 
   function render(d, lang) {
     document.documentElement.lang = { pt: "pt-BR", es: "es", en: "en" }[lang];
-    document.title = d.ui.titulo[lang];
-    document.getElementById("titulo").textContent = d.ui.titulo[lang];
-    document.getElementById("subtitulo").textContent = d.ui.subtitulo[lang];
     Array.prototype.forEach.call(document.querySelectorAll("[data-lang]"), function (b) {
       b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false");
     });
@@ -181,6 +178,10 @@
         im = Object.assign({}, p, im); // o imóvel sobrescreve o prédio
       }
     }
+    var titulo = im ? d.ui.bem_vindo[lang] + " " + im.nome : d.ui.titulo[lang];
+    document.title = titulo;
+    document.getElementById("titulo").textContent = titulo;
+    document.getElementById("subtitulo").textContent = (im ? d.ui.subtitulo_imovel : d.ui.subtitulo)[lang];
     var guiaCats = d.guia.categorias.map(function (c) {
       return '<section id="' + esc(c.id) + '"><h2>' + esc(c.titulo[lang]) + "</h2>" +
         c.itens.map(function (it) {
