@@ -1,1 +1,113 @@
-{"atualizado_em": "2026-11-16", "eventos": []}
+{
+ "atualizado_em": "2026-11-16",
+ "eventos": [
+  {
+   "nome": {
+    "pt": "Abertura do Natal de Florianópolis",
+    "es": "Apertura de la Navidad de Florianópolis",
+    "en": "Florianópolis Christmas opening"
+   },
+   "data_inicio": "2026-11-18",
+   "data_fim": "2026-11-18",
+   "horario": "",
+   "local": "Largo da Catedral – Centro",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Catedral%20Metropolitana%20de%20Florian%C3%B3polis%2C%20Florian%C3%B3polis%20-%20SC",
+   "descricao": {
+    "pt": "Acendimento das luzes de Natal, decoração especial e a entrega da chave da cidade ao Papai Noel. Gratuito. Horário a confirmar.",
+    "es": "Encendido de las luces navideñas, decoración especial y entrega de la llave de la ciudad a Papá Noel. Gratis. Horario a confirmar.",
+    "en": "Christmas lights switch-on, special decorations and Santa receiving the key to the city. Free. Time to be confirmed."
+   },
+   "link": "https://floripa.com/programe-se/natal-e-reveillon-2027-em-florianopolis-programacao-e-shows/"
+  },
+  {
+   "nome": {
+    "pt": "Decoração de Natal no centro",
+    "es": "Decoración navideña en el centro",
+    "en": "Christmas lights downtown"
+   },
+   "data_inicio": "2026-11-18",
+   "data_fim": "2026-12-25",
+   "horario": "",
+   "local": "Praça XV de Novembro – Centro",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20XV%20de%20Novembro%2C%20Florian%C3%B3polis%20-%20SC",
+   "descricao": {
+    "pt": "Praça XV iluminada com figuras de luz, árvores com projeções e neve artificial. Vale o passeio à noite.",
+    "es": "Plaza XV iluminada con figuras de luz, árboles con proyecciones y nieve artificial. Vale el paseo de noche.",
+    "en": "Praça XV lit up with light sculptures, projections on the trees and artificial snow. Lovely at night."
+   },
+   "link": "https://floripa.com/programe-se/natal-e-reveillon-2027-em-florianopolis-programacao-e-shows/"
+  },
+  {
+   "nome": {
+    "pt": "Desfile de Natal",
+    "es": "Desfile de Navidad",
+    "en": "Christmas parade"
+   },
+   "data_inicio": "2026-12-05",
+   "data_fim": "2026-12-05",
+   "horario": "",
+   "local": "Avenida Beira-Mar Norte",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Beira-Mar%20Norte%2C%20Florian%C3%B3polis%20-%20SC",
+   "descricao": {
+    "pt": "Desfile com alas temáticas, carros alegóricos e música natalina. Gratuito. Horário a confirmar.",
+    "es": "Desfile con comparsas temáticas, carrozas y música navideña. Gratis. Horario a confirmar.",
+    "en": "Parade with themed groups, floats and Christmas music. Free. Time to be confirmed."
+   },
+   "link": "https://floripa.com/programe-se/natal-e-reveillon-2027-em-florianopolis-programacao-e-shows/"
+  },
+  {
+   "nome": {
+    "pt": "Coral de Natal",
+    "es": "Coro de Navidad",
+    "en": "Christmas choir"
+   },
+   "data_inicio": "2026-12-10",
+   "data_fim": "2026-12-10",
+   "horario": "",
+   "local": "Palácio Cruz e Sousa – Praça XV",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio%20Cruz%20e%20Sousa%2C%20Florian%C3%B3polis%20-%20SC",
+   "descricao": {
+    "pt": "Apresentação de coral natalino no palácio histórico da Praça XV. Horário a confirmar.",
+    "es": "Presentación de coro navideño en el palacio histórico de la Plaza XV. Horario a confirmar.",
+    "en": "Christmas choir performance at the historic palace on Praça XV. Time to be confirmed."
+   },
+   "link": "https://floripa.com/programe-se/natal-e-reveillon-2027-em-florianopolis-programacao-e-shows/"
+  },
+  {
+   "nome": {
+    "pt": "Auto de Natal",
+    "es": "Auto de Navidad",
+    "en": "Nativity play"
+   },
+   "data_inicio": "2026-12-17",
+   "data_fim": "2026-12-17",
+   "horario": "",
+   "local": "Largo da Catedral – Centro",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Catedral%20Metropolitana%20de%20Florian%C3%B3polis%2C%20Florian%C3%B3polis%20-%20SC",
+   "descricao": {
+    "pt": "Encenação tradicional do nascimento de Jesus ao ar livre, ao lado da Praça XV. Horário a confirmar.",
+    "es": "Representación tradicional del nacimiento de Jesús al aire libre, junto a la Plaza XV. Horario a confirmar.",
+    "en": "Traditional open-air nativity play next to Praça XV. Time to be confirmed."
+   },
+   "link": "https://floripa.com/programe-se/natal-e-reveillon-2027-em-florianopolis-programacao-e-shows/"
+  },
+  {
+   "nome": {
+    "pt": "Réveillon na Beira-Mar Norte",
+    "es": "Año Nuevo en la Beira-Mar Norte",
+    "en": "New Year's Eve on Beira-Mar Norte"
+   },
+   "data_inicio": "2026-12-31",
+   "data_fim": "2026-12-31",
+   "horario": "",
+   "local": "Avenida Beira-Mar Norte",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Beira-Mar%20Norte%2C%20Florian%C3%B3polis%20-%20SC",
+   "descricao": {
+    "pt": "Show de Ana Castela e 20 minutos de fogos disparados de balsas na baía, com cascata de fogos na Ponte Hercílio Luz. Gratuito; chegue cedo. Horário a confirmar.",
+    "es": "Show de Ana Castela y 20 minutos de fuegos artificiales desde balsas en la bahía, con cascada de fuegos en el Puente Hercílio Luz. Gratis; llega temprano. Horario a confirmar.",
+    "en": "Ana Castela concert plus 20 minutes of fireworks launched from barges in the bay, with a firework waterfall on Hercílio Luz Bridge. Free; arrive early. Time to be confirmed."
+   },
+   "link": "https://floripa.com/programe-se/natal-e-reveillon-2027-em-florianopolis-programacao-e-shows/"
+  }
+ ]
+}
