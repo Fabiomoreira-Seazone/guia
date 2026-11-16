@@ -1,56 +1,76 @@
+/* Identidade Seazone (paleta do portal Franqueado 360º): azul Seazone, navy, coral, azul-claro.
+   Layout: barra branca com logo + faixa azul de título; conteúdo em coluna única de 680px. */
 :root {
-  --bg: #f7f4ee;
+  --sz-blue: #005eff;
+  --sz-navy: #10203d;
+  --sz-coral: #fc6159;
+  --bg: #eff1fa;          /* seazone-light-blue */
   --card: #ffffff;
-  --ink: #1d2a33;
-  --muted: #5b6b75;
-  --line: #e4ddd0;
-  --accent: #0d6e8a;
+  --ink: #070e31;         /* foreground do portal */
+  --muted: #6c7084;       /* seazone-gray */
+  --line: #e2e4ec;
+  --accent: var(--sz-blue);
   --accent-ink: #ffffff;
-  --sand: #f0e6d2;
+  --soft: #fff6f5;        /* seazone-light-pink */
+  --soft-ink: #c2372f;
   --whats: #1f8f4e;
+  --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0f171c; --card: #172229; --ink: #e8eef1; --muted: #9fb0ba;
-    --line: #26343c; --accent: #4fb6d3; --accent-ink: #06222b; --sand: #1d2b33; --whats: #3fbf74; color-scheme: dark;
+    --bg: #070e31; --card: #111a45; --ink: #eff1fa; --muted: #a3a9c2; --line: #222c5c;
+    --accent: #4d8dff; --accent-ink: #070e31; --soft: #2a1d36; --soft-ink: #ff8f88; --whats: #3fbf74;
+    color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0f171c; --card: #172229; --ink: #e8eef1; --muted: #9fb0ba;
-  --line: #26343c; --accent: #4fb6d3; --accent-ink: #06222b; --sand: #1d2b33; --whats: #3fbf74; color-scheme: dark;
+  --bg: #070e31; --card: #111a45; --ink: #eff1fa; --muted: #a3a9c2; --line: #222c5c;
+  --accent: #4d8dff; --accent-ink: #070e31; --soft: #2a1d36; --soft-ink: #ff8f88; --whats: #3fbf74;
+  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body {
-  margin: 0; background: var(--bg); color: var(--ink);
-  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 var(--font); }
+
+/* A barra do logo fica sempre branca para o logo oficial (navy + coral) ficar legível nos dois temas. */
+.barra {
+  background: #ffffff; border-bottom: 1px solid #e2e4ec;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px max(16px, calc((100% - 680px) / 2));
 }
-header {
-  background: var(--accent); color: var(--accent-ink);
-  padding: 20px 16px 28px;
+.logo {
+  display: block; width: 132px; aspect-ratio: 1920 / 317; max-width: 100%;
+  background: url("seazone-logo.png") left center / contain no-repeat;
 }
-.topo { display: flex; justify-content: flex-end; gap: 6px; max-width: 680px; margin: 0 auto 16px; }
+.logo.pequeno { width: 96px; margin: 0 auto 8px; }
+.topo { display: flex; gap: 6px; }
 .topo button {
-  font: inherit; font-size: 14px; font-weight: 600; padding: 6px 12px; border-radius: 999px;
-  border: 1px solid currentColor; background: transparent; color: inherit; cursor: pointer;
+  font: 600 13px/1 var(--font); padding: 8px 12px; border-radius: 999px; cursor: pointer;
+  border: 1px solid #d5d9e6; background: #ffffff; color: #10203d;
 }
-.topo button[aria-pressed="true"] { background: var(--accent-ink); color: var(--accent); border-color: var(--accent-ink); }
-header h1 { margin: 0 auto; max-width: 680px; font-size: 28px; line-height: 1.2; }
-header p { margin: 6px auto 0; max-width: 680px; opacity: .9; }
+.topo button[aria-pressed="true"] { background: #005eff; border-color: #005eff; color: #ffffff; }
+.topo button:focus-visible, a:focus-visible { outline: 3px solid var(--sz-coral); outline-offset: 2px; }
+
+.hero { background: var(--sz-blue); color: #ffffff; padding: 24px max(16px, calc((100% - 680px) / 2)) 36px; }
+.hero h1 { margin: 0; font-size: 28px; line-height: 1.15; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; }
+.hero p { margin: 6px 0 0; opacity: .92; }
+
 main { max-width: 680px; margin: 0 auto; padding: 0 16px 48px; }
-h2 { font-size: 22px; margin: 32px 0 12px; }
+h2 { font-size: 22px; margin: 32px 0 12px; color: var(--ink); text-wrap: balance; }
 .secao { margin-top: 28px; }
 h3 { font-size: 17px; margin: 0 0 4px; }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; margin-top: -12px; }
+
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; margin-top: -18px; box-shadow: 0 6px 20px rgba(7, 14, 49, .08); }
 .card h2 { margin: 2px 0 2px; }
 .card h3 { margin-top: 18px; }
 .card ul { padding-left: 20px; margin: 4px 0 0; }
-.eyebrow { margin: 0; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
+.eyebrow { margin: 0; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--sz-coral); font-weight: 700; }
 .aviso { color: var(--muted); }
 .horarios { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 16px 0 10px; }
-.horarios div { background: var(--sand); border-radius: 12px; padding: 10px 12px; }
+.horarios div { background: var(--bg); border-radius: 12px; padding: 10px 12px; }
 .horarios span { display: block; font-size: 13px; color: var(--muted); }
-.nota { font-size: 14px; color: var(--muted); margin: 0; }
+.nota { font-size: 14px; color: var(--soft-ink); background: var(--soft); border-radius: 10px; padding: 8px 12px; margin: 0; }
+
 .atalhos { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; -webkit-overflow-scrolling: touch; }
 .atalhos a {
   flex: none; text-decoration: none; color: var(--ink); background: var(--card);
@@ -59,15 +79,17 @@ h3 { font-size: 17px; margin: 0 0 4px; }
 .item { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; margin-bottom: 10px; }
 .item p { margin: 0 0 6px; }
 .endereco { font-size: 14px; color: var(--muted); }
-.quando { font-size: 13px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .03em; }
+.quando { font-size: 13px; font-weight: 700; color: var(--sz-coral); text-transform: uppercase; letter-spacing: .04em; }
 .acoes { display: flex; flex-wrap: wrap; gap: 8px; }
 .maps, .link, .whats {
   display: inline-flex; align-items: center; gap: 6px; text-decoration: none;
-  font-size: 14px; font-weight: 600; border-radius: 10px; padding: 8px 12px; min-height: 40px;
+  font-size: 14px; font-weight: 600; border-radius: 999px; padding: 8px 14px; min-height: 40px;
 }
 .maps { background: var(--accent); color: var(--accent-ink); }
 .maps svg { width: 16px; height: 16px; fill: currentColor; }
 .link { border: 1px solid var(--line); color: var(--ink); }
 .whats { background: var(--whats); color: #fff; margin-top: 16px; }
 .vazio, .atualizado { color: var(--muted); font-size: 14px; }
-footer { text-align: center; color: var(--muted); font-size: 13px; padding: 0 16px 32px; }
+footer { text-align: center; color: var(--muted); font-size: 13px; padding: 8px 16px 32px; }
+footer .logo { background-color: #ffffff; border-radius: 8px; padding: 6px 10px; background-origin: content-box; width: 116px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
