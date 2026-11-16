@@ -110,9 +110,12 @@
 
   function iniciar() {
     var base = window.BASE || "./";
-    Promise.all(["ui", "guia", "eventos", "imoveis"].map(function (n) {
-      return fetch(base + "data/" + n + ".json", { cache: "no-cache" }).then(function (r) { return r.json(); });
-    })).then(function (r) {
+    var nomes = ["ui", "guia", "eventos", "imoveis"];
+    var carregar = window.DADOS ? Promise.resolve(nomes.map(function (n) { return window.DADOS[n]; }))
+      : Promise.all(nomes.map(function (n) {
+        return fetch(base + "data/" + n + ".json", { cache: "no-cache" }).then(function (r) { return r.json(); });
+      }));
+    carregar.then(function (r) {
       var d = { ui: r[0], guia: r[1], eventos: r[2], imoveis: r[3] };
       var lang = escolherIdioma(navigator.language, lerSalvo());
       render(d, lang);
