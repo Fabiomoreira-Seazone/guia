@@ -39,9 +39,9 @@
     {
      "src": "img/tvt-piscina.jpg",
      "alt": {
-      "pt": "Piscina de borda infinita no rooftop do Top Vision Tower, com vista para a cidade.",
-      "es": "Piscina de borde infinito en la azotea del Top Vision Tower, con vista a la ciudad.",
-      "en": "Infinity pool on the Top Vision Tower rooftop overlooking the city."
+      "pt": "Piscina de borda infinita do Top Vision Tower, com vista para a cidade.",
+      "es": "Piscina de borde infinito del Top Vision Tower, con vista a la ciudad.",
+      "en": "Top Vision Tower infinity pool overlooking the city."
      }
     },
     {
@@ -68,7 +68,12 @@
       "en": "Open-plan studio with kitchen, island and bed, lit by the balcony window."
      }
     }
-   ]
+   ],
+   "areas_comuns": {
+    "pt": "A piscina funciona todos os dias, das 8h às 22h. Ela não é aquecida.",
+    "es": "La piscina funciona todos los días, de 8h a 22h. No es climatizada.",
+    "en": "The pool is open daily from 8 am to 10 pm. It is not heated."
+   }
   }
  ]
 }

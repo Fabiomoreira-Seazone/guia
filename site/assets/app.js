@@ -74,6 +74,7 @@
       "<div><span>" + esc(ui.checkout[lang]) + "</span><strong>" + esc(ui.ate[lang]) + " " + esc(im.checkout) + "</strong></div></div>" +
       '<p class="nota">' + esc(ui.aviso_senha[lang]) + "</p>" +
       (im.acesso ? "<h3>" + esc(ui.acesso[lang]) + "</h3><p>" + esc(im.acesso[lang]) + "</p>" : "") +
+      (im.areas_comuns ? "<h3>" + esc(ui.areas_comuns[lang]) + "</h3><p>" + esc(im.areas_comuns[lang]) + "</p>" : "") +
       "<h3>" + esc(ui.como_chegar[lang]) + "</h3><p>" + esc(im.como_chegar[lang]) + "</p>" +
       "<h3>" + esc(ui.estacionamento[lang]) + "</h3>" + htmlFoto(im.estacionamento_foto, lang) +
       "<p>" + esc(im.estacionamento[lang]) + "</p>" +

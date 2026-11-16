@@ -98,6 +98,11 @@ class TestValidar(unittest.TestCase):
         d["predios"]["predios"][0]["estacionamento_foto"] = f
         self.assertTrue(validar(d))
 
+    def test_rejeita_areas_comuns_sem_idioma(self):
+        d = self.com_predio()
+        d["predios"]["predios"][0]["areas_comuns"] = {"pt": "Piscina 8h–22h", "es": "Piscina 8h–22h"}
+        self.assertTrue(any("areas_comuns" in e and '"en"' in e for e in validar(d)))
+
     def test_aceita_galeria(self):
         d = self.com_predio()
         d["predios"]["predios"][0]["galeria"] = [{"src": "img/tvt-piscina.jpg", "alt": T}]
