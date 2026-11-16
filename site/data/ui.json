@@ -1,1 +1,21 @@
-{}
+{
+  "titulo": {"pt": "Guia do Centro de Florianópolis", "es": "Guía del Centro de Florianópolis", "en": "Downtown Florianópolis Guide"},
+  "subtitulo": {"pt": "Dicas para aproveitar a Ilha da Magia a pé", "es": "Consejos para disfrutar la Isla de la Magia a pie", "en": "Tips to enjoy the Magic Island on foot"},
+  "abrir_maps": {"pt": "Abrir no Google Maps", "es": "Abrir en Google Maps", "en": "Open in Google Maps"},
+  "eventos": {"pt": "Agenda", "es": "Agenda", "en": "What's on"},
+  "sem_eventos": {"pt": "Agenda em atualização. Volte em breve!", "es": "Agenda en actualización. ¡Vuelve pronto!", "en": "Schedule being updated. Check back soon!"},
+  "atualizado": {"pt": "Atualizado em", "es": "Actualizado el", "en": "Updated on"},
+  "mais_info": {"pt": "Mais informações", "es": "Más información", "en": "More info"},
+  "seu_imovel": {"pt": "Sua hospedagem", "es": "Tu alojamiento", "en": "Your stay"},
+  "checkin": {"pt": "Check-in", "es": "Check-in", "en": "Check-in"},
+  "checkout": {"pt": "Check-out", "es": "Check-out", "en": "Check-out"},
+  "a_partir": {"pt": "a partir das", "es": "a partir de las", "en": "from"},
+  "ate": {"pt": "até", "es": "hasta las", "en": "by"},
+  "como_chegar": {"pt": "Como chegar", "es": "Cómo llegar", "en": "Getting there"},
+  "estacionamento": {"pt": "Estacionamento", "es": "Estacionamiento", "en": "Parking"},
+  "regras": {"pt": "Regras da casa", "es": "Reglas de la casa", "en": "House rules"},
+  "contato": {"pt": "Falar com a gente no WhatsApp", "es": "Hablar con nosotros por WhatsApp", "en": "Chat with us on WhatsApp"},
+  "aviso_senha": {"pt": "A senha de acesso é enviada pelo WhatsApp no dia do check-in.", "es": "La contraseña de acceso se envía por WhatsApp el día del check-in.", "en": "Your access password is sent via WhatsApp on check-in day."},
+  "imovel_nao_encontrado": {"pt": "Não encontramos esta hospedagem, mas o guia do centro está logo abaixo.", "es": "No encontramos este alojamiento, pero la guía del centro está abajo.", "en": "We couldn't find this listing, but the downtown guide is right below."},
+  "guia": {"pt": "Explore o centro", "es": "Explora el centro", "en": "Explore downtown"}
+}
