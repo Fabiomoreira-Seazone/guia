@@ -64,6 +64,11 @@ class TestValidar(unittest.TestCase):
         d["imoveis"]["imoveis"][0]["malas"] = {"pt": "x"}
         self.assertTrue(any("malas" in e for e in validar(d)))
 
+    def test_aceita_aviso_de_senha_com_reconhecimento_facial_na_ui(self):
+        d = self.d()
+        d["ui"]["aviso_senha_facial"] = {"pt": "A senha chega no dia", "es": "La contraseña llega", "en": "Password arrives"}
+        self.assertEqual(validar(d), [])
+
     def com_predio(self):
         d = self.d()
         d["predios"] = {"predios": [{"id": "tvt", "nome": "Top Vision Tower", "endereco": "Rua Y",

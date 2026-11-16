@@ -9,7 +9,7 @@ IDIOMAS = ("pt", "es", "en")
 PROIBIDO = re.compile(r"senha|password|contraseña|(?<!free )wi-?fi(?!\s+(grátis|gratis|gratuit[oa]))", re.I)
 MAPS = ("https://www.google.com/maps/", "https://maps.app.goo.gl/")
 # Única chave da UI autorizada a falar de senha ("a senha é enviada pelo WhatsApp").
-UI_LIBERADA = {"aviso_senha"}
+UI_LIBERADA = {"aviso_senha", "aviso_senha_facial"}
 TEXTOS = {"titulo", "descricao", "nome_traduzido", "como_chegar", "estacionamento"}
 
 

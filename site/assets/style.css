@@ -73,7 +73,7 @@ h3 { font-size: 17px; margin: 0 0 4px; }
 .horarios span { display: block; font-size: 13px; color: var(--muted); }
 .flex { font-size: 14px; margin: 0 0 10px; }
 .flex a { color: var(--accent); font-weight: 700; white-space: nowrap; }
-.nota { font-size: 14px; color: var(--soft-ink); background: var(--soft); border-radius: 10px; padding: 8px 12px; margin: 0; }
+.nota { font-size: 17px; font-weight: 700; line-height: 1.4; color: var(--soft-ink); background: var(--soft); border-radius: 10px; padding: 12px 14px; margin: 0; }
 
 .atalhos { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; -webkit-overflow-scrolling: touch; }
 .atalhos a {
