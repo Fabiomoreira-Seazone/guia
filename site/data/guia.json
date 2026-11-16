@@ -1,1 +1,243 @@
-{"categorias": []}
+{
+ "categorias": [
+  {
+   "id": "pontos",
+   "titulo": {
+    "pt": "Pontos turísticos",
+    "es": "Puntos turísticos",
+    "en": "Sightseeing"
+   },
+   "itens": [
+    {
+     "id": "mercado",
+     "nome": "Mercado Público",
+     "endereco": "Rua Jerônimo Coelho, 60 – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Mercado%20P%C3%BAblico%20de%20Florian%C3%B3polis%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Cartão-postal da cidade desde 1899. Peixarias, artesanato, cafés e bares no vão central. Ótimo para provar frutos do mar.",
+      "es": "Postal de la ciudad desde 1899. Pescaderías, artesanías, cafés y bares en el patio central. Ideal para probar mariscos.",
+      "en": "The city's landmark since 1899: fish stalls, crafts, cafés and bars in the central courtyard. Great for seafood."
+     }
+    },
+    {
+     "id": "pracaxv",
+     "nome": "Praça XV de Novembro e Figueira",
+     "endereco": "Praça XV de Novembro – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20XV%20de%20Novembro%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "O coração do centro histórico, com a famosa figueira centenária. Diz a lenda que quem dá voltas nela encontra o amor.",
+      "es": "El corazón del centro histórico, con la famosa higuera centenaria. Dice la leyenda que quien la rodea encuentra el amor.",
+      "en": "The heart of the historic center, home to the famous century-old fig tree. Legend says walking around it brings love."
+     }
+    },
+    {
+     "id": "catedral",
+     "nome": "Catedral Metropolitana",
+     "endereco": "Praça XV de Novembro – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Catedral%20Metropolitana%20de%20Florian%C3%B3polis%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Igreja no alto da Praça XV, com vista para a figueira. Construída sobre a antiga capela que deu origem à cidade.",
+      "es": "Iglesia en lo alto de la Plaza XV, con vista a la higuera. Construida sobre la antigua capilla que dio origen a la ciudad.",
+      "en": "Cathedral at the top of Praça XV overlooking the fig tree, built where the city's founding chapel stood."
+     }
+    },
+    {
+     "id": "museu",
+     "nome": "Museu Histórico de SC – Palácio Cruz e Sousa",
+     "endereco": "Praça XV de Novembro, 227 – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio%20Cruz%20e%20Sousa%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Antigo palácio do governo, hoje museu. Salões decorados e jardim interno; vale a visita rápida.",
+      "es": "Antiguo palacio de gobierno, hoy museo. Salones decorados y jardín interno; vale una visita corta.",
+      "en": "Former government palace turned museum, with ornate halls and an inner garden. Worth a quick visit."
+     }
+    },
+    {
+     "id": "alfandega",
+     "nome": "Casa da Alfândega",
+     "endereco": "Largo da Alfândega – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Casa%20da%20Alf%C3%A2ndega%20Florian%C3%B3polis%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Prédio neoclássico de 1876 com loja de artesanato catarinense: renda de bilro, cerâmica e lembranças.",
+      "es": "Edificio neoclásico de 1876 con tienda de artesanía local: encaje de bolillos, cerámica y recuerdos.",
+      "en": "Neoclassical building from 1876 with a local craft shop: bobbin lace, ceramics and souvenirs."
+     }
+    },
+    {
+     "id": "calcadao",
+     "nome": "Calçadão da Felipe Schmidt",
+     "endereco": "Rua Felipe Schmidt – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Rua%20Felipe%20Schmidt%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Rua de pedestres com lojas, cafés e o movimento do centro. Liga a Praça XV às ruas comerciais.",
+      "es": "Calle peatonal con tiendas, cafés y el movimiento del centro. Une la Plaza XV con las calles comerciales.",
+      "en": "Pedestrian street with shops, cafés and downtown buzz, linking Praça XV to the shopping streets."
+     }
+    },
+    {
+     "id": "teatro",
+     "nome": "Teatro Álvaro de Carvalho (TAC)",
+     "endereco": "Rua Marechal Guilherme – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Teatro%20%C3%81lvaro%20de%20Carvalho%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Teatro histórico do século XIX. Confira a programação na seção Agenda.",
+      "es": "Teatro histórico del siglo XIX. Consulta la programación en la sección Agenda.",
+      "en": "Historic 19th-century theater. Check the What's on section for shows."
+     }
+    },
+    {
+     "id": "ponte",
+     "nome": "Ponte Hercílio Luz",
+     "endereco": "Cabeceira insular – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Ponte%20Herc%C3%ADlio%20Luz%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Símbolo de Florianópolis. Linda ao pôr do sol e iluminada à noite. Nos fins de semana e feriados costuma ser aberta só para pedestres e ciclistas.",
+      "es": "Símbolo de Florianópolis. Hermoso al atardecer e iluminado de noche. Los fines de semana y feriados suele estar abierto solo a peatones y ciclistas.",
+      "en": "Florianópolis' icon, stunning at sunset and lit up at night. On weekends and holidays it's usually open to pedestrians and cyclists only."
+     }
+    },
+    {
+     "id": "beiramar",
+     "nome": "Avenida Beira-Mar Norte",
+     "endereco": "Av. Jornalista Rubens de Arruda Ramos – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Beira-Mar%20Norte%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Calçadão à beira-mar para caminhar, correr ou pedalar, com vista para a baía e quiosques no caminho.",
+      "es": "Paseo costero para caminar, correr o andar en bici, con vista a la bahía y quioscos en el camino.",
+      "en": "Waterfront promenade for walking, running or cycling, with bay views and kiosks along the way."
+     }
+    },
+    {
+     "id": "morrodacruz",
+     "nome": "Mirante do Morro da Cruz",
+     "endereco": "Morro da Cruz (acesso de carro, táxi ou app)",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Mirante%20do%20Morro%20da%20Cruz%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Mirante a 285 m de altura com vista panorâmica da Ilha e do continente. Melhor ir de carro ou aplicativo, de preferência de dia ou ao pôr do sol.",
+      "es": "Mirador a 285 m con vista panorámica de la Isla y el continente. Mejor ir en auto o app, de día o al atardecer.",
+      "en": "Lookout at 285 m with panoramic views of the island and mainland. Go by car or ride-hailing, ideally by day or at sunset."
+     }
+    }
+   ]
+  },
+  {
+   "id": "comer",
+   "titulo": {
+    "pt": "Onde comer e beber",
+    "es": "Dónde comer y beber",
+    "en": "Food & drinks"
+   },
+   "itens": [
+    {
+     "id": "box32",
+     "nome": "Box 32",
+     "endereco": "Mercado Público – Rua Jerônimo Coelho, 60",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Box%2032%20Mercado%20P%C3%BAblico%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Bar mais tradicional do Mercado Público (desde 1984). Famoso pelo pastel de camarão e pela cachaça.",
+      "es": "El bar más tradicional del Mercado Público (desde 1984). Famoso por la empanada de camarón y la cachaça.",
+      "en": "The Mercado Público's most traditional bar (since 1984), famous for shrimp pastéis and cachaça."
+     }
+    },
+    {
+     "id": "kibelandia",
+     "nome": "Kibelândia",
+     "endereco": "Rua Victor Meirelles, 98 – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Kibel%C3%A2ndia%20Chopperia%20Rua%20Victor%20Meirelles%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Chopperia clássica do centro desde os anos 60, com comida árabe e petiscos de boteco.",
+      "es": "Cervecería clásica del centro desde los años 60, con comida árabe y picadas.",
+      "en": "Classic downtown draft-beer spot since the 1960s, serving Middle Eastern food and bar snacks."
+     }
+    },
+    {
+     "id": "pontochic",
+     "nome": "Senadinho Café Ponto Chic",
+     "endereco": "Rua Felipe Schmidt, 61 – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Ponto%20Chic%20Felipe%20Schmidt%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Café histórico na esquina mais movimentada do calçadão. Bom para um cafezinho no meio do passeio.",
+      "es": "Café histórico en la esquina más concurrida del paseo peatonal. Ideal para un café durante la caminata.",
+      "en": "Historic café on the busiest corner of the pedestrian street, perfect for a coffee break."
+     }
+    },
+    {
+     "id": "bocaiuva",
+     "nome": "Bares da Rua Bocaiúva",
+     "endereco": "Rua Bocaiúva – Centro (perto da Beira-Mar)",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Rua%20Bocai%C3%BAva%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Região com vários bares e restaurantes próximos, dá para ir a pé de um para o outro. Boa pedida à noite.",
+      "es": "Zona con muchos bares y restaurantes cercanos, se puede ir caminando de uno a otro. Buena opción de noche.",
+      "en": "Area packed with bars and restaurants within walking distance of each other. Great at night."
+     }
+    }
+   ]
+  },
+  {
+   "id": "servicos",
+   "titulo": {
+    "pt": "Serviços úteis",
+    "es": "Servicios útiles",
+    "en": "Useful services"
+   },
+   "itens": [
+    {
+     "id": "mercados",
+     "nome": "Supermercados",
+     "endereco": "Vários no centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=supermercado%20Centro%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Abra o mapa para ver os supermercados mais próximos da sua hospedagem.",
+      "es": "Abre el mapa para ver los supermercados más cercanos a tu alojamiento.",
+      "en": "Open the map to see the supermarkets closest to your stay."
+     }
+    },
+    {
+     "id": "farmacias",
+     "nome": "Farmácias",
+     "endereco": "Várias no centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=farm%C3%A1cia%20Centro%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Abra o mapa para ver as farmácias abertas mais próximas.",
+      "es": "Abre el mapa para ver las farmacias abiertas más cercanas.",
+      "en": "Open the map to find the nearest open pharmacies."
+     }
+    },
+    {
+     "id": "hospital",
+     "nome": "Hospital de Caridade (emergência)",
+     "endereco": "Morro do Menino Deus – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Hospital%20de%20Caridade%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Hospital com pronto-socorro no centro. Emergências: SAMU 192 · Bombeiros 193 · Polícia 190.",
+      "es": "Hospital con guardia en el centro. Emergencias: SAMU 192 · Bomberos 193 · Policía 190.",
+      "en": "Downtown hospital with an emergency room. Emergency numbers: Ambulance 192 · Fire 193 · Police 190."
+     }
+    },
+    {
+     "id": "ticen",
+     "nome": "Terminal de ônibus TICEN",
+     "endereco": "Av. Paulo Fontes – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=TICEN%20Terminal%20de%20Integra%C3%A7%C3%A3o%20do%20Centro%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Terminal urbano de onde saem ônibus para as praias e bairros da Ilha.",
+      "es": "Terminal urbano desde donde salen los buses hacia las playas y barrios de la Isla.",
+      "en": "City bus terminal with routes to the island's beaches and neighborhoods."
+     }
+    },
+    {
+     "id": "rodoviaria",
+     "nome": "Rodoviária Rita Maria",
+     "endereco": "Av. Paulo Fontes – Centro",
+     "maps_url": "https://www.google.com/maps/search/?api=1&query=Terminal%20Rodovi%C3%A1rio%20Rita%20Maria%2C%20Florian%C3%B3polis%20-%20SC",
+     "descricao": {
+      "pt": "Ônibus intermunicipais e internacionais (inclusive para Argentina e Uruguai).",
+      "es": "Buses de larga distancia e internacionales (incluso a Argentina y Uruguay).",
+      "en": "Long-distance and international buses (including to Argentina and Uruguay)."
+     }
+    }
+   ]
+  }
+ ]
+}
