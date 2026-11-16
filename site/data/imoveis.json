@@ -1806,9 +1806,9 @@
     "en": "1008 · 10th floor"
    },
    "vaga": {
-    "pt": "95, no Subsolo 1",
-    "es": "95, en el Subsuelo 1",
-    "en": "95, basement level 1"
+    "pt": "95, no S1 (subsolo 1)",
+    "es": "95, en el S1 (subsuelo 1)",
+    "en": "95, level S1 (basement 1)"
    }
   },
   {
@@ -1895,9 +1895,9 @@
     "en": "1009 · 10th floor"
    },
    "vaga": {
-    "pt": "96, no Subsolo 1",
-    "es": "96, en el Subsuelo 1",
-    "en": "96, basement level 1"
+    "pt": "96, no S1 (subsolo 1)",
+    "es": "96, en el S1 (subsuelo 1)",
+    "en": "96, level S1 (basement 1)"
    }
   },
   {
@@ -2073,9 +2073,9 @@
     "en": "904 · 9th floor"
    },
    "vaga": {
-    "pt": "7",
-    "es": "7",
-    "en": "7"
+    "pt": "7, no G1",
+    "es": "7, en el G1",
+    "en": "7, level G1"
    }
   },
   {
