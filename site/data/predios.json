@@ -94,9 +94,9 @@
     }
    ],
    "malas": {
-    "pt": "Nosso complexo não tem portaria nem local para guardar malas. Se você chegar antes do check-in, o guarda-volumes mais próximo é o da Rodoviária Rita Maria. Você também pode aguardar no térreo, onde há diversos serviços abertos ao público, inclusive Wi-Fi grátis.",
-    "es": "Nuestro complejo no tiene portería ni lugar para guardar maletas. Si llegas antes del check-in, la consigna más cercana es la de la Terminal de Buses Rita Maria. También puedes esperar en la planta baja, donde hay varios servicios abiertos al público, incluso wifi gratis.",
-    "en": "Our building has no front desk or luggage storage. If you arrive before check-in, the nearest luggage storage is at the Rita Maria bus station. You can also wait on the ground floor, which has several services open to the public, including free Wi-Fi."
+    "pt": "Nosso complexo não tem portaria nem local para guardar malas. Se você chegar antes do check-in ou precisar ficar na cidade depois do check-out, o guarda-volumes mais próximo é o da Rodoviária Rita Maria. Você também pode aguardar no térreo, onde há diversos serviços abertos ao público, inclusive Wi-Fi grátis.",
+    "es": "Nuestro complejo no tiene portería ni lugar para guardar maletas. Si llegas antes del check-in o necesitas quedarte en la ciudad después del check-out, la consigna más cercana es la de la Terminal de Buses Rita Maria. También puedes esperar en la planta baja, donde hay varios servicios abiertos al público, incluso wifi gratis.",
+    "en": "Our building has no front desk or luggage storage. If you arrive before check-in or need to stay in town after check-out, the nearest luggage storage is at the Rita Maria bus station. You can also wait on the ground floor, which has several services open to the public, including free Wi-Fi."
    },
    "reconhecimento_facial": true
   }
