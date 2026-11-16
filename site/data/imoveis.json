@@ -1907,7 +1907,57 @@
     }
    ],
    "contato_whatsapp": "",
-   "predio": "tvt"
+   "predio": "tvt",
+   "galeria": [
+    {
+     "src": "img/tvt1403-vista.jpg",
+     "alt": {
+      "pt": "Vista panorâmica do 14º andar para a baía e a ponte.",
+      "es": "Vista panorámica desde el piso 14 a la bahía y el puente.",
+      "en": "Panoramic view from the 14th floor over the bay and bridge."
+     }
+    },
+    {
+     "src": "img/tvt1403-sala.jpg",
+     "alt": {
+      "pt": "Sala de estar com sofá em L e janelão.",
+      "es": "Sala de estar con sofá en L y ventanal.",
+      "en": "Living room with L-shaped sofa and a large window."
+     }
+    },
+    {
+     "src": "img/tvt1403-jantar.jpg",
+     "alt": {
+      "pt": "Mesa de jantar redonda integrada à sala.",
+      "es": "Mesa de comedor redonda integrada a la sala.",
+      "en": "Round dining table open to the living room."
+     }
+    },
+    {
+     "src": "img/tvt1403-quarto.jpg",
+     "alt": {
+      "pt": "Quarto com cama de casal e porta para a varanda.",
+      "es": "Dormitorio con cama doble y salida al balcón.",
+      "en": "Bedroom with double bed and balcony door."
+     }
+    },
+    {
+     "src": "img/tvt1403-cozinha.jpg",
+     "alt": {
+      "pt": "Cozinha equipada com micro-ondas e forno.",
+      "es": "Cocina equipada con microondas y horno.",
+      "en": "Equipped kitchen with microwave and oven."
+     }
+    },
+    {
+     "src": "img/tvt1403-banheiro.jpg",
+     "alt": {
+      "pt": "Banheiro com box de vidro.",
+      "es": "Baño con mampara de vidrio.",
+      "en": "Bathroom with glass shower."
+     }
+    }
+   ]
   },
   {
    "codigo": "TVT904",
@@ -1936,7 +1986,57 @@
     }
    ],
    "contato_whatsapp": "",
-   "predio": "tvt"
+   "predio": "tvt",
+   "galeria": [
+    {
+     "src": "img/tvt904-sala.jpg",
+     "alt": {
+      "pt": "Estúdio com janelão e mesa de refeições com vista.",
+      "es": "Estudio con ventanal y mesa con vista.",
+      "en": "Studio with a large window and dining table with a view."
+     }
+    },
+    {
+     "src": "img/tvt904-vista.jpg",
+     "alt": {
+      "pt": "Vista do 9º andar para a baía e a ponte.",
+      "es": "Vista desde el piso 9 a la bahía y el puente.",
+      "en": "View from the 9th floor over the bay and bridge."
+     }
+    },
+    {
+     "src": "img/tvt904-estar.jpg",
+     "alt": {
+      "pt": "Sala com sofá, TV e mesa.",
+      "es": "Sala con sofá, TV y mesa.",
+      "en": "Living area with sofa, TV and table."
+     }
+    },
+    {
+     "src": "img/tvt904-cama.jpg",
+     "alt": {
+      "pt": "Cama de casal com TV em frente.",
+      "es": "Cama doble con TV enfrente.",
+      "en": "Double bed facing the TV."
+     }
+    },
+    {
+     "src": "img/tvt904-cozinha.jpg",
+     "alt": {
+      "pt": "Cozinha equipada com armários em madeira.",
+      "es": "Cocina equipada con muebles de madera.",
+      "en": "Equipped kitchen with wooden cabinets."
+     }
+    },
+    {
+     "src": "img/tvt904-banheiro.jpg",
+     "alt": {
+      "pt": "Banheiro com box de vidro.",
+      "es": "Baño con mampara de vidrio.",
+      "en": "Bathroom with glass shower."
+     }
+    }
+   ]
   },
   {
    "codigo": "UBS0502",
