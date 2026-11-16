@@ -78,6 +78,26 @@ class TestValidar(unittest.TestCase):
         d["predios"]["predios"][0]["lixo"] = {"pt": "G1", "es": "G1"}
         self.assertTrue(any('"en"' in e for e in validar(d)))
 
+    def foto(self):
+        return {"src": "img/tvt-garagem.jpg", "alt": T, "credito": "Google Street View"}
+
+    def test_aceita_foto_da_garagem(self):
+        d = self.com_predio()
+        d["predios"]["predios"][0]["estacionamento_foto"] = self.foto()
+        self.assertEqual(validar(d), [])
+
+    def test_rejeita_foto_sem_texto_alternativo(self):
+        d = self.com_predio()
+        f = self.foto(); f["alt"] = {"pt": "portão"}
+        d["predios"]["predios"][0]["estacionamento_foto"] = f
+        self.assertTrue(any("alt" in e for e in validar(d)))
+
+    def test_rejeita_foto_fora_da_pasta_img(self):
+        d = self.com_predio()
+        f = self.foto(); f["src"] = "https://x.com/a.jpg"
+        d["predios"]["predios"][0]["estacionamento_foto"] = f
+        self.assertTrue(validar(d))
+
     def test_rejeita_maps_da_garagem_invalido(self):
         d = self.com_predio()
         d["predios"]["predios"][0]["estacionamento_maps_url"] = "http://x"

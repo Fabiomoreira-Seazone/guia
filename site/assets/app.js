@@ -45,6 +45,13 @@
       esc((rotulo || ui.abrir_maps)[lang]) + "</a>";
   }
 
+  function htmlFoto(f, lang) {
+    if (!f) return "";
+    var src = (window.FOTOS && window.FOTOS[f.src]) || (window.BASE || "./") + f.src;
+    return '<figure class="foto"><img src="' + esc(src) + '" alt="' + esc(f.alt[lang]) + '" loading="lazy">' +
+      (f.credito ? "<figcaption>" + esc(f.credito) + "</figcaption>" : "") + "</figure>";
+  }
+
   function htmlImovel(im, ui, lang) {
     if (!im) return '<section class="card aviso">' + esc(ui.imovel_nao_encontrado[lang]) + "</section>";
     var regras = (im.regras || []).map(function (r) { return "<li>" + esc(r[lang]) + "</li>"; }).join("");
@@ -58,7 +65,8 @@
       '<p class="nota">' + esc(ui.aviso_senha[lang]) + "</p>" +
       (im.acesso ? "<h3>" + esc(ui.acesso[lang]) + "</h3><p>" + esc(im.acesso[lang]) + "</p>" : "") +
       "<h3>" + esc(ui.como_chegar[lang]) + "</h3><p>" + esc(im.como_chegar[lang]) + "</p>" +
-      "<h3>" + esc(ui.estacionamento[lang]) + "</h3><p>" + esc(im.estacionamento[lang]) + "</p>" +
+      "<h3>" + esc(ui.estacionamento[lang]) + "</h3>" + htmlFoto(im.estacionamento_foto, lang) +
+      "<p>" + esc(im.estacionamento[lang]) + "</p>" +
       (im.estacionamento_maps_url ? botaoMaps(im.estacionamento_maps_url, ui, lang, ui.garagem_maps) : "") +
       (im.lixo ? "<h3>" + esc(ui.lixo[lang]) + "</h3><p>" + esc(im.lixo[lang]) + "</p>" : "") +
       (regras ? "<h3>" + esc(ui.regras[lang]) + "</h3><ul>" + regras + "</ul>" : "") +

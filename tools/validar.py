@@ -87,6 +87,11 @@ def validar(dados):
         for campo in ("acesso", "lixo"):
             if campo in ef:
                 _texto(ef[campo], f"{onde}.{campo}", erros)
+        if "estacionamento_foto" in ef:
+            f = ef["estacionamento_foto"]
+            if not re.fullmatch(r"img/[\w.-]+\.(jpg|jpeg|png|webp)", str(f.get("src", ""))):
+                erros.append(f"{onde}.estacionamento_foto: src deve ser img/<arquivo> ({f.get('src')!r})")
+            _texto(f.get("alt"), f"{onde}.estacionamento_foto.alt", erros)
         if "estacionamento_maps_url" in ef:
             _maps(ef["estacionamento_maps_url"], f"{onde}.estacionamento", erros)
         for j, r in enumerate(im.get("regras", [])):
@@ -102,6 +107,10 @@ def main():
     for im in dados["imoveis"].get("imoveis", []):
         if not (site / im["codigo"] / "index.html").exists():
             erros.append(f"falta a página site/{im['codigo']}/index.html")
+    for p in dados["predios"].get("predios", []) + dados["imoveis"].get("imoveis", []):
+        src = (p.get("estacionamento_foto") or {}).get("src")
+        if src and not (site / src).exists():
+            erros.append(f"falta o arquivo de foto site/{src}")
     for e in erros:
         print("ERRO:", e)
     print("OK" if not erros else f"{len(erros)} erro(s)")

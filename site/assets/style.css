@@ -89,6 +89,9 @@ h3 { font-size: 17px; margin: 0 0 4px; }
 .maps svg { width: 16px; height: 16px; fill: currentColor; }
 .link { border: 1px solid var(--line); color: var(--ink); }
 .whats { background: var(--whats); color: #fff; margin-top: 16px; }
+.foto { margin: 8px 0 10px; }
+.foto img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+.foto figcaption { font-size: 12px; color: var(--muted); margin-top: 4px; }
 .vazio, .atualizado { color: var(--muted); font-size: 14px; }
 footer { text-align: center; color: var(--muted); font-size: 13px; padding: 8px 16px 32px; }
 footer .logo { background-color: #ffffff; border-radius: 8px; padding: 6px 10px; background-origin: content-box; width: 116px; }

@@ -25,6 +25,15 @@
     "pt": "O depósito de lixo fica no G1, ao lado do portão de saída. Por gentileza, leve todo o seu lixo ao sair. Obrigado!",
     "es": "El depósito de basura está en el G1, junto al portón de salida. Por favor, lleva toda tu basura al salir. ¡Gracias!",
     "en": "The trash room is on level G1, next to the exit gate. Please take all your trash with you when you leave. Thank you!"
+   },
+   "estacionamento_foto": {
+    "src": "img/tvt-garagem.jpg",
+    "alt": {
+     "pt": "Fachada na Rua Conselheiro Mafra com o portão da garagem do Top Vision Tower circulado em vermelho, ao lado da entrada do Estacionamento Rotativo.",
+     "es": "Fachada en la Rua Conselheiro Mafra con el portón de la cochera del Top Vision Tower marcado en rojo, junto a la entrada del Estacionamiento Rotativo.",
+     "en": "Street view on Rua Conselheiro Mafra with the Top Vision Tower garage gate circled in red, next to the public parking entrance."
+    },
+    "credito": "Imagem: Google Street View"
    }
   }
  ]
