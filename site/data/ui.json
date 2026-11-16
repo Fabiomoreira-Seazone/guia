@@ -15,7 +15,7 @@
   "estacionamento": {"pt": "Estacionamento", "es": "Estacionamiento", "en": "Parking"},
   "acesso": {"pt": "Acesso ao prédio", "es": "Acceso al edificio", "en": "Building access"},
   "garagem_maps": {"pt": "Abrir a garagem no Maps", "es": "Abrir la cochera en Maps", "en": "Open the garage in Maps"},
-  "areas_comuns": {"pt": "Piscina e áreas comuns", "es": "Piscina y áreas comunes", "en": "Pool & common areas"},
+  "areas_comuns": {"pt": "Áreas comuns e serviços no prédio", "es": "Áreas comunes y servicios en el edificio", "en": "Common areas & on-site services"},
   "foto_anterior": {"pt": "Foto anterior", "es": "Foto anterior", "en": "Previous photo"},
   "proxima_foto": {"pt": "Próxima foto", "es": "Siguiente foto", "en": "Next photo"},
   "lixo": {"pt": "Lixo", "es": "Basura", "en": "Trash"},

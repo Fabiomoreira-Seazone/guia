@@ -100,6 +100,14 @@
     atualizar();
   }
 
+  function htmlAreas(lista, ui, lang) {
+    if (!lista || !lista.length) return "";
+    return "<h3>" + esc(ui.areas_comuns[lang]) + '</h3><ul class="areas">' + lista.map(function (a) {
+      return "<li>" + (a.foto ? '<img src="' + esc(srcFoto(a.foto.src)) + '" alt="' + esc(a.foto.alt[lang]) + '" loading="lazy">' : "") +
+        "<div><strong>" + esc(a.nome[lang]) + "</strong><p>" + esc(a.texto[lang]) + "</p></div></li>";
+    }).join("") + "</ul>";
+  }
+
   function htmlImovel(im, ui, lang) {
     if (!im) return '<section class="card aviso">' + esc(ui.imovel_nao_encontrado[lang]) + "</section>";
     var regras = (im.regras || []).map(function (r) { return "<li>" + esc(r[lang]) + "</li>"; }).join("");
@@ -112,7 +120,7 @@
       "<div><span>" + esc(ui.checkout[lang]) + "</span><strong>" + esc(ui.ate[lang]) + " " + esc(im.checkout) + "</strong></div></div>" +
       '<p class="nota">' + esc(ui.aviso_senha[lang]) + "</p>" +
       (im.acesso ? "<h3>" + esc(ui.acesso[lang]) + "</h3><p>" + esc(im.acesso[lang]) + "</p>" : "") +
-      (im.areas_comuns ? "<h3>" + esc(ui.areas_comuns[lang]) + "</h3><p>" + esc(im.areas_comuns[lang]) + "</p>" : "") +
+      htmlAreas(im.areas_comuns, ui, lang) +
       "<h3>" + esc(ui.como_chegar[lang]) + "</h3><p>" + esc(im.como_chegar[lang]) + "</p>" +
       "<h3>" + esc(ui.estacionamento[lang]) + "</h3>" + htmlFoto(im.estacionamento_foto, lang) +
       "<p>" + esc(im.estacionamento[lang]) + "</p>" +

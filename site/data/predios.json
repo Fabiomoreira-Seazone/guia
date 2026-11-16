@@ -35,45 +35,64 @@
     },
     "credito": "Imagem: Google Street View"
    },
-   "galeria": [
+   "areas_comuns": [
     {
-     "src": "img/tvt-piscina.jpg",
-     "alt": {
-      "pt": "Piscina de borda infinita do Top Vision Tower, com vista para a cidade.",
-      "es": "Piscina de borde infinito del Top Vision Tower, con vista a la ciudad.",
-      "en": "Top Vision Tower infinity pool overlooking the city."
+     "nome": {
+      "pt": "Piscina",
+      "es": "Piscina",
+      "en": "Pool"
+     },
+     "texto": {
+      "pt": "Aberta todos os dias, das 8h às 22h. Não é aquecida.",
+      "es": "Abierta todos los días, de 8h a 22h. No es climatizada.",
+      "en": "Open daily from 8 am to 10 pm. Not heated."
+     },
+     "foto": {
+      "src": "img/tvt-piscina.jpg",
+      "alt": {
+       "pt": "Piscina de borda infinita do Top Vision Tower, com vista para a cidade.",
+       "es": "Piscina de borde infinito del Top Vision Tower, con vista a la ciudad.",
+       "en": "Top Vision Tower infinity pool overlooking the city."
+      }
      }
     },
     {
-     "src": "img/tvt-vista-ponte.jpg",
-     "alt": {
-      "pt": "Vista da varanda para a baía e a ponte, com os morros ao fundo.",
-      "es": "Vista desde el balcón a la bahía y el puente, con los cerros al fondo.",
-      "en": "Balcony view of the bay and the bridge, with the hills behind."
+     "nome": {
+      "pt": "Supermercado Angeloni",
+      "es": "Supermercado Angeloni",
+      "en": "Angeloni Supermarket"
+     },
+     "texto": {
+      "pt": "No próprio complexo, ao lado da entrada TOWER. Aberto até as 22h.",
+      "es": "En el mismo complejo, junto a la entrada TOWER. Abierto hasta las 22h.",
+      "en": "Right in the complex, next to the TOWER entrance. Open until 10 pm."
      }
     },
     {
-     "src": "img/tvt-varanda.jpg",
-     "alt": {
-      "pt": "Varanda do estúdio com vista para o mar e a Ponte Hercílio Luz.",
-      "es": "Balcón del estudio con vista al mar y al Puente Hercílio Luz.",
-      "en": "Studio balcony with views of the sea and Hercílio Luz Bridge."
+     "nome": {
+      "pt": "Praça de alimentação",
+      "es": "Patio de comidas",
+      "en": "Food court"
+     },
+     "texto": {
+      "pt": "Em frente à entrada TOWER, com várias opções para comer. Funciona até as 22h.",
+      "es": "Frente a la entrada TOWER, con varias opciones para comer. Abierto hasta las 22h.",
+      "en": "Facing the TOWER entrance, with plenty of places to eat. Open until 10 pm."
      }
     },
     {
-     "src": "img/tvt-studio.jpg",
-     "alt": {
-      "pt": "Estúdio integrado com cozinha, bancada e cama, iluminado pela janela da varanda.",
-      "es": "Estudio integrado con cocina, isla y cama, iluminado por el ventanal del balcón.",
-      "en": "Open-plan studio with kitchen, island and bed, lit by the balcony window."
+     "nome": {
+      "pt": "Cafeteria",
+      "es": "Cafetería",
+      "en": "Café"
+     },
+     "texto": {
+      "pt": "Opção para o café da manhã ou um lanche sem sair do complexo.",
+      "es": "Opción para el desayuno o una merienda sin salir del complejo.",
+      "en": "A spot for breakfast or a snack without leaving the complex."
      }
     }
-   ],
-   "areas_comuns": {
-    "pt": "A piscina funciona todos os dias, das 8h às 22h. Ela não é aquecida.",
-    "es": "La piscina funciona todos los días, de 8h a 22h. No es climatizada.",
-    "en": "The pool is open daily from 8 am to 10 pm. It is not heated."
-   }
+   ]
   }
  ]
 }

@@ -117,6 +117,13 @@ h3 { font-size: 17px; margin: 0 0 4px; }
 .pontos span { width: 7px; height: 7px; border-radius: 50%; background: var(--line); transition: background .2s, width .2s; }
 .pontos span.ativo { width: 18px; border-radius: 4px; background: var(--accent); }
 @media (prefers-reduced-motion: reduce) { .pontos span { transition: none; } }
+/* Áreas comuns: lista com miniatura opcional à esquerda. */
+.card ul.areas { list-style: none; padding: 0; margin: 6px 0 0; display: grid; gap: 10px; }
+.areas li { display: flex; gap: 12px; align-items: flex-start; background: var(--bg); border-radius: 12px; padding: 10px; }
+.areas img { flex: none; width: 96px; max-width: 30%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; }
+.areas div { min-width: 0; }
+.areas strong { display: block; font-size: 15px; }
+.areas p { margin: 2px 0 0; font-size: 14px; color: var(--muted); }
 .foto { margin: 8px 0 10px; }
 .foto img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
 .foto figcaption { font-size: 12px; color: var(--muted); margin-top: 4px; }

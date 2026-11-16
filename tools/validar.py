@@ -90,9 +90,18 @@ def validar(dados):
         _maps(ef.get("maps_url"), onde, erros)
         for campo in ("como_chegar", "estacionamento"):
             _texto(ef.get(campo), f"{onde}.{campo}", erros)
-        for campo in ("acesso", "areas_comuns", "lixo"):
+        for campo in ("acesso", "lixo"):
             if campo in ef:
                 _texto(ef[campo], f"{onde}.{campo}", erros)
+        if "areas_comuns" in ef:
+            if not isinstance(ef["areas_comuns"], list):
+                erros.append(f"{onde}.areas_comuns: deveria ser uma lista de itens {{nome, texto, foto?}}")
+            else:
+                for j, a in enumerate(ef["areas_comuns"]):
+                    _texto(a.get("nome"), f"{onde}.areas_comuns[{j}].nome", erros)
+                    _texto(a.get("texto"), f"{onde}.areas_comuns[{j}].texto", erros)
+                    if "foto" in a:
+                        _foto(a["foto"], f"{onde}.areas_comuns[{j}].foto", erros)
         if "estacionamento_foto" in ef:
             _foto(ef["estacionamento_foto"], f"{onde}.estacionamento_foto", erros)
         for j, f in enumerate(ef.get("galeria", [])):
@@ -113,7 +122,8 @@ def main():
         if not (site / im["codigo"] / "index.html").exists():
             erros.append(f"falta a página site/{im['codigo']}/index.html")
     for p in dados["predios"].get("predios", []) + dados["imoveis"].get("imoveis", []):
-        fotos = [p.get("estacionamento_foto") or {}] + p.get("galeria", [])
+        areas = p.get("areas_comuns") if isinstance(p.get("areas_comuns"), list) else []
+        fotos = [p.get("estacionamento_foto") or {}] + p.get("galeria", []) + [a.get("foto") or {} for a in areas]
         for src in filter(None, (f.get("src") for f in fotos)):
             if not (site / src).exists():
                 erros.append(f"falta o arquivo de foto site/{src}")

@@ -98,10 +98,37 @@ class TestValidar(unittest.TestCase):
         d["predios"]["predios"][0]["estacionamento_foto"] = f
         self.assertTrue(validar(d))
 
+    def area(self):
+        return {"nome": T, "texto": T, "foto": {"src": "img/tvt-piscina.jpg", "alt": T}}
+
+    def test_aceita_areas_comuns_em_lista(self):
+        d = self.com_predio()
+        d["predios"]["predios"][0]["areas_comuns"] = [self.area(), {"nome": T, "texto": T}]
+        self.assertEqual(validar(d), [])
+
     def test_rejeita_areas_comuns_sem_idioma(self):
         d = self.com_predio()
-        d["predios"]["predios"][0]["areas_comuns"] = {"pt": "Piscina 8h–22h", "es": "Piscina 8h–22h"}
+        a = self.area(); a["texto"] = {"pt": "Piscina 8h–22h", "es": "Piscina 8h–22h"}
+        d["predios"]["predios"][0]["areas_comuns"] = [a]
         self.assertTrue(any("areas_comuns" in e and '"en"' in e for e in validar(d)))
+
+    def test_rejeita_areas_comuns_que_nao_e_lista(self):
+        d = self.com_predio()
+        d["predios"]["predios"][0]["areas_comuns"] = T
+        self.assertTrue(any("areas_comuns" in e for e in validar(d)))
+
+    def test_rejeita_foto_da_area_comum_sem_alt(self):
+        d = self.com_predio()
+        a = self.area(); a["foto"]["alt"] = {"pt": "x"}
+        d["predios"]["predios"][0]["areas_comuns"] = [a]
+        self.assertTrue(any("areas_comuns" in e and "alt" in e for e in validar(d)))
+
+    def test_galeria_do_imovel_substitui_a_do_predio(self):
+        d = self.com_predio()
+        d["predios"]["predios"][0]["galeria"] = [{"src": "img/a.jpg", "alt": T}]
+        d["imoveis"]["imoveis"][0]["galeria"] = [{"src": "img/b.jpg", "alt": {"pt": "b"}}]
+        erros = validar(d)
+        self.assertTrue(any("galeria[0]" in e and '"es"' in e for e in erros), erros)
 
     def test_aceita_galeria(self):
         d = self.com_predio()

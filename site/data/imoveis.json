@@ -1749,7 +1749,57 @@
     }
    ],
    "contato_whatsapp": "",
-   "predio": "tvt"
+   "predio": "tvt",
+   "galeria": [
+    {
+     "src": "img/tvt1008-vista.jpg",
+     "alt": {
+      "pt": "Vista da varanda para a baía e a Ponte Hercílio Luz.",
+      "es": "Vista desde el balcón a la bahía y el Puente Hercílio Luz.",
+      "en": "Balcony view of the bay and Hercílio Luz Bridge."
+     }
+    },
+    {
+     "src": "img/tvt1008-sala-quarto.jpg",
+     "alt": {
+      "pt": "Estúdio com sala de estar e cama de casal.",
+      "es": "Estudio con sala de estar y cama doble.",
+      "en": "Studio with living area and double bed."
+     }
+    },
+    {
+     "src": "img/tvt1008-sala-cozinha.jpg",
+     "alt": {
+      "pt": "Sala integrada à cozinha com bancada.",
+      "es": "Sala integrada a la cocina con isla.",
+      "en": "Living area open to the kitchen island."
+     }
+    },
+    {
+     "src": "img/tvt1008-quarto.jpg",
+     "alt": {
+      "pt": "Cama de casal com roupa de cama branca.",
+      "es": "Cama doble con ropa de cama blanca.",
+      "en": "Double bed with white linens."
+     }
+    },
+    {
+     "src": "img/tvt1008-varanda.jpg",
+     "alt": {
+      "pt": "Varanda envidraçada com vista para a cidade.",
+      "es": "Balcón vidriado con vista a la ciudad.",
+      "en": "Glass balcony with city views."
+     }
+    },
+    {
+     "src": "img/tvt1008-banheiro.jpg",
+     "alt": {
+      "pt": "Banheiro com box de vidro.",
+      "es": "Baño con mampara de vidrio.",
+      "en": "Bathroom with glass shower."
+     }
+    }
+   ]
   },
   {
    "codigo": "TVT1009",
@@ -1778,7 +1828,57 @@
     }
    ],
    "contato_whatsapp": "",
-   "predio": "tvt"
+   "predio": "tvt",
+   "galeria": [
+    {
+     "src": "img/tvt1009-varanda.jpg",
+     "alt": {
+      "pt": "Varanda com vista para o mar e a Ponte Hercílio Luz.",
+      "es": "Balcón con vista al mar y al Puente Hercílio Luz.",
+      "en": "Balcony with views of the sea and Hercílio Luz Bridge."
+     }
+    },
+    {
+     "src": "img/tvt1009-estudio.jpg",
+     "alt": {
+      "pt": "Estúdio integrado com cozinha, bancada e cama.",
+      "es": "Estudio integrado con cocina, isla y cama.",
+      "en": "Open-plan studio with kitchen, island and bed."
+     }
+    },
+    {
+     "src": "img/tvt1009-quarto.jpg",
+     "alt": {
+      "pt": "Cama de casal e mesa com vista para a varanda.",
+      "es": "Cama doble y mesa con vista al balcón.",
+      "en": "Double bed and table facing the balcony."
+     }
+    },
+    {
+     "src": "img/tvt1009-cozinha.jpg",
+     "alt": {
+      "pt": "Cozinha equipada com geladeira, micro-ondas e forno.",
+      "es": "Cocina equipada con heladera, microondas y horno.",
+      "en": "Equipped kitchen with fridge, microwave and oven."
+     }
+    },
+    {
+     "src": "img/tvt1009-vista.jpg",
+     "alt": {
+      "pt": "Vista da baía com a ponte ao fundo.",
+      "es": "Vista de la bahía con el puente al fondo.",
+      "en": "Bay view with the bridge in the distance."
+     }
+    },
+    {
+     "src": "img/tvt1009-banheiro.jpg",
+     "alt": {
+      "pt": "Banheiro com box de vidro.",
+      "es": "Baño con mampara de vidrio.",
+      "en": "Bathroom with glass shower."
+     }
+    }
+   ]
   },
   {
    "codigo": "TVT1403",
