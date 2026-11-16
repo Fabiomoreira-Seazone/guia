@@ -5,7 +5,8 @@ import sys
 from pathlib import Path
 
 IDIOMAS = ("pt", "es", "en")
-PROIBIDO = re.compile(r"senha|password|contraseña|wi-?fi", re.I)
+# "Wi-Fi grátis" (rede pública do térreo) é liberado; qualquer outra menção a Wi-Fi continua bloqueada.
+PROIBIDO = re.compile(r"senha|password|contraseña|(?<!free )wi-?fi(?!\s+(grátis|gratis|gratuit[oa]))", re.I)
 MAPS = ("https://www.google.com/maps/", "https://maps.app.goo.gl/")
 # Única chave da UI autorizada a falar de senha ("a senha é enviada pelo WhatsApp").
 UI_LIBERADA = {"aviso_senha"}
@@ -90,7 +91,7 @@ def validar(dados):
         _maps(ef.get("maps_url"), onde, erros)
         for campo in ("como_chegar", "estacionamento"):
             _texto(ef.get(campo), f"{onde}.{campo}", erros)
-        for campo in ("acesso", "lixo", "apartamento", "vaga"):
+        for campo in ("acesso", "lixo", "apartamento", "vaga", "malas"):
             if campo in ef:
                 _texto(ef[campo], f"{onde}.{campo}", erros)
         if "areas_comuns" in ef:

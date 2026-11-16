@@ -119,7 +119,10 @@
       botaoMaps(im.maps_url, ui, lang) +
       '<div class="horarios"><div><span>' + esc(ui.checkin[lang]) + "</span><strong>" + esc(ui.a_partir[lang]) + " " + esc(im.checkin) + "</strong></div>" +
       "<div><span>" + esc(ui.checkout[lang]) + "</span><strong>" + esc(ui.ate[lang]) + " " + esc(im.checkout) + "</strong></div></div>" +
+      '<p class="flex">' + esc(ui.early_late[lang]) + ' <a href="https://wa.me/' + esc(ui.atendimento_numero.pt.replace(/\D/g, "")) +
+        '" target="_blank" rel="noopener">' + esc(ui.atendimento_numero[lang]) + "</a></p>" +
       '<p class="nota">' + esc(ui.aviso_senha[lang]) + "</p>" +
+      (im.malas ? "<h3>" + esc(ui.chegou_cedo[lang]) + "</h3><p>" + esc(im.malas[lang]) + "</p>" : "") +
       (im.acesso ? "<h3>" + esc(ui.acesso[lang]) + "</h3><p>" + esc(im.acesso[lang]) + "</p>" : "") +
       htmlAreas(im.areas_comuns, ui, lang) +
       "<h3>" + esc(ui.como_chegar[lang]) + "</h3><p>" + esc(im.como_chegar[lang]) + "</p>" +

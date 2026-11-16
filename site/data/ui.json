@@ -23,6 +23,9 @@
   "lixo": {"pt": "Lixo", "es": "Basura", "en": "Trash"},
   "regras": {"pt": "Regras da casa", "es": "Reglas de la casa", "en": "House rules"},
   "contato": {"pt": "Falar com a gente no WhatsApp", "es": "Hablar con nosotros por WhatsApp", "en": "Chat with us on WhatsApp"},
+  "early_late": {"pt": "Precisa de early check-in ou late check-out? Fale com o atendimento da Seazone pela plataforma onde fez a reserva ou pelo WhatsApp:", "es": "¿Necesitas early check-in o late check-out? Habla con la atención de Seazone por la plataforma donde hiciste la reserva o por WhatsApp:", "en": "Need an early check-in or late check-out? Contact Seazone support through the platform where you booked or on WhatsApp:"},
+  "atendimento_numero": {"pt": "+55 48 99113-8912", "es": "+55 48 99113-8912", "en": "+55 48 99113-8912"},
+  "chegou_cedo": {"pt": "Chegou mais cedo?", "es": "¿Llegaste antes?", "en": "Arriving early?"},
   "aviso_senha": {"pt": "A senha de acesso é enviada pelo WhatsApp no dia do check-in.", "es": "La contraseña de acceso se envía por WhatsApp el día del check-in.", "en": "Your access password is sent via WhatsApp on check-in day."},
   "imovel_nao_encontrado": {"pt": "Não encontramos esta hospedagem, mas o guia do centro está logo abaixo.", "es": "No encontramos este alojamiento, pero la guía del centro está abajo.", "en": "We couldn't find this listing, but the downtown guide is right below."},
   "guia": {"pt": "Explore o centro", "es": "Explora el centro", "en": "Explore downtown"}

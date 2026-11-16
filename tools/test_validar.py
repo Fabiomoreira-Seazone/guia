@@ -48,6 +48,22 @@ class TestValidar(unittest.TestCase):
         d["imoveis"]["imoveis"][0]["wifi"] = "rede123"
         self.assertTrue(validar(d))
 
+    def test_aceita_wifi_gratis_publico(self):
+        d = self.d()
+        d["imoveis"]["imoveis"][0]["malas"] = {"pt": "Térreo com Wi-Fi grátis", "es": "Planta baja con wifi gratis",
+                                               "en": "Ground floor with free Wi-Fi"}
+        self.assertEqual(validar(d), [])
+
+    def test_continua_rejeitando_rede_wifi(self):
+        d = self.d()
+        d["imoveis"]["imoveis"][0]["regras"] = [{"pt": "Rede Wi-Fi: CASA123", "es": "x", "en": "x"}]
+        self.assertTrue(validar(d))
+
+    def test_rejeita_malas_sem_idioma(self):
+        d = self.d()
+        d["imoveis"]["imoveis"][0]["malas"] = {"pt": "x"}
+        self.assertTrue(any("malas" in e for e in validar(d)))
+
     def com_predio(self):
         d = self.d()
         d["predios"] = {"predios": [{"id": "tvt", "nome": "Top Vision Tower", "endereco": "Rua Y",
