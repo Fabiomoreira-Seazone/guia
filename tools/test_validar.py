@@ -78,6 +78,21 @@ class TestValidar(unittest.TestCase):
         d["predios"]["predios"][0]["lixo"] = {"pt": "G1", "es": "G1"}
         self.assertTrue(any('"en"' in e for e in validar(d)))
 
+    def test_aceita_apartamento_e_vaga(self):
+        d = self.d()
+        d["imoveis"]["imoveis"][0].update(apartamento=T, vaga=T)
+        self.assertEqual(validar(d), [])
+
+    def test_rejeita_vaga_sem_idioma(self):
+        d = self.d()
+        d["imoveis"]["imoveis"][0]["vaga"] = {"pt": "7", "es": "7"}
+        self.assertTrue(any("vaga" in e and '"en"' in e for e in validar(d)))
+
+    def test_rejeita_apartamento_sem_idioma(self):
+        d = self.d()
+        d["imoveis"]["imoveis"][0]["apartamento"] = "904"
+        self.assertTrue(any("apartamento" in e for e in validar(d)))
+
     def foto(self):
         return {"src": "img/tvt-garagem.jpg", "alt": T, "credito": "Google Street View"}
 

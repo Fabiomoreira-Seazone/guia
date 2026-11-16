@@ -114,6 +114,7 @@
     return '<section class="card imovel' + (im.galeria && im.galeria.length ? " com-galeria" : "") + '">' + htmlGaleria(im.galeria, ui, lang) +
       '<p class="eyebrow">' + esc(ui.seu_imovel[lang]) + "</p>" +
       "<h2>" + esc(im.nome) + "</h2>" +
+      (im.apartamento ? '<p class="apto">' + esc(ui.apartamento[lang]) + " " + esc(im.apartamento[lang]) + "</p>" : "") +
       '<p class="endereco">' + esc(im.endereco) + "</p>" +
       botaoMaps(im.maps_url, ui, lang) +
       '<div class="horarios"><div><span>' + esc(ui.checkin[lang]) + "</span><strong>" + esc(ui.a_partir[lang]) + " " + esc(im.checkin) + "</strong></div>" +
@@ -123,6 +124,7 @@
       htmlAreas(im.areas_comuns, ui, lang) +
       "<h3>" + esc(ui.como_chegar[lang]) + "</h3><p>" + esc(im.como_chegar[lang]) + "</p>" +
       "<h3>" + esc(ui.estacionamento[lang]) + "</h3>" + htmlFoto(im.estacionamento_foto, lang) +
+      (im.vaga ? '<p class="vaga">' + esc(ui.sua_vaga[lang]) + " " + esc(im.vaga[lang]) + "</p>" : "") +
       "<p>" + esc(im.estacionamento[lang]) + "</p>" +
       (im.estacionamento_maps_url ? botaoMaps(im.estacionamento_maps_url, ui, lang, ui.garagem_maps) : "") +
       (im.lixo ? "<h3>" + esc(ui.lixo[lang]) + "</h3><p>" + esc(im.lixo[lang]) + "</p>" : "") +

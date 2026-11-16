@@ -90,7 +90,7 @@ def validar(dados):
         _maps(ef.get("maps_url"), onde, erros)
         for campo in ("como_chegar", "estacionamento"):
             _texto(ef.get(campo), f"{onde}.{campo}", erros)
-        for campo in ("acesso", "lixo"):
+        for campo in ("acesso", "lixo", "apartamento", "vaga"):
             if campo in ef:
                 _texto(ef[campo], f"{onde}.{campo}", erros)
         if "areas_comuns" in ef:

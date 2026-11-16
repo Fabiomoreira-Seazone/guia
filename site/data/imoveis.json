@@ -1799,7 +1799,17 @@
       "en": "Bathroom with glass shower."
      }
     }
-   ]
+   ],
+   "apartamento": {
+    "pt": "1008 · 10º andar",
+    "es": "1008 · piso 10",
+    "en": "1008 · 10th floor"
+   },
+   "vaga": {
+    "pt": "95, no Subsolo 1",
+    "es": "95, en el Subsuelo 1",
+    "en": "95, basement level 1"
+   }
   },
   {
    "codigo": "TVT1009",
@@ -1878,7 +1888,17 @@
       "en": "Bathroom with glass shower."
      }
     }
-   ]
+   ],
+   "apartamento": {
+    "pt": "1009 · 10º andar",
+    "es": "1009 · piso 10",
+    "en": "1009 · 10th floor"
+   },
+   "vaga": {
+    "pt": "96, no Subsolo 1",
+    "es": "96, en el Subsuelo 1",
+    "en": "96, basement level 1"
+   }
   },
   {
    "codigo": "TVT1403",
@@ -1957,7 +1977,17 @@
       "en": "Bathroom with glass shower."
      }
     }
-   ]
+   ],
+   "apartamento": {
+    "pt": "1403 · 14º andar",
+    "es": "1403 · piso 14",
+    "en": "1403 · 14th floor"
+   },
+   "vaga": {
+    "pt": "41, no G1",
+    "es": "41, en el G1",
+    "en": "41, level G1"
+   }
   },
   {
    "codigo": "TVT904",
@@ -2036,7 +2066,17 @@
       "en": "Bathroom with glass shower."
      }
     }
-   ]
+   ],
+   "apartamento": {
+    "pt": "904 · 9º andar",
+    "es": "904 · piso 9",
+    "en": "904 · 9th floor"
+   },
+   "vaga": {
+    "pt": "7",
+    "es": "7",
+    "en": "7"
+   }
   },
   {
    "codigo": "UBS0502",
