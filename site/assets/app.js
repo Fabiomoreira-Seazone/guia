@@ -55,17 +55,55 @@
     return (window.FOTOS && window.FOTOS[src]) || (window.BASE || "./") + src;
   }
 
-  function htmlGaleria(g, lang) {
+  function htmlGaleria(g, ui, lang) {
     if (!g || !g.length) return "";
-    return '<div class="galeria" tabindex="0" aria-label="Fotos">' + g.map(function (f, i) {
+    var multi = g.length > 1;
+    return '<div class="galeria-wrap"><div class="galeria" tabindex="0" aria-label="Fotos">' + g.map(function (f, i) {
       return '<img src="' + esc(srcFoto(f.src)) + '" alt="' + esc(f.alt[lang]) + '"' + (i ? ' loading="lazy"' : "") + ">";
-    }).join("") + "</div>";
+    }).join("") + "</div>" +
+      (multi ? '<button type="button" class="seta ant" aria-label="' + esc(ui.foto_anterior[lang]) + '" disabled>&#8249;</button>' +
+        '<button type="button" class="seta prox" aria-label="' + esc(ui.proxima_foto[lang]) + '">&#8250;</button>' +
+        '<div class="pontos" aria-hidden="true">' + g.map(function (_, i) { return "<span" + (i ? "" : ' class="ativo"') + "></span>"; }).join("") + "</div>" : "") +
+      "</div>";
+  }
+
+  // Liga setas e pontinhos: as setas rolam uma foto por vez; os pontos seguem a rolagem (mouse, toque ou teclado).
+  function ligarGaleria() {
+    var wrap = document.querySelector(".galeria-wrap");
+    if (!wrap) return;
+    var trilho = wrap.querySelector(".galeria");
+    var fotos = trilho.querySelectorAll("img");
+    var ant = wrap.querySelector(".ant"), prox = wrap.querySelector(".prox");
+    var pontos = wrap.querySelectorAll(".pontos span");
+    if (!prox) return;
+    function passo() { return fotos.length > 1 ? fotos[1].offsetLeft - fotos[0].offsetLeft : trilho.clientWidth; }
+    function atual() { return Math.round(trilho.scrollLeft / passo()); }
+    function atualizar() {
+      var i = atual();
+      var fim = trilho.scrollLeft + trilho.clientWidth >= trilho.scrollWidth - 2;
+      if (fim) i = fotos.length - 1;
+      Array.prototype.forEach.call(pontos, function (p, j) { p.className = j === i ? "ativo" : ""; });
+      ant.disabled = trilho.scrollLeft <= 2;
+      prox.disabled = fim;
+    }
+    function ir(d) {
+      var reduz = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      trilho.scrollTo({ left: (atual() + d) * passo(), behavior: reduz ? "auto" : "smooth" });
+    }
+    ant.addEventListener("click", function () { ir(-1); });
+    prox.addEventListener("click", function () { ir(1); });
+    trilho.addEventListener("scroll", atualizar, { passive: true });
+    trilho.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowRight") { e.preventDefault(); ir(1); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); ir(-1); }
+    });
+    atualizar();
   }
 
   function htmlImovel(im, ui, lang) {
     if (!im) return '<section class="card aviso">' + esc(ui.imovel_nao_encontrado[lang]) + "</section>";
     var regras = (im.regras || []).map(function (r) { return "<li>" + esc(r[lang]) + "</li>"; }).join("");
-    return '<section class="card imovel' + (im.galeria && im.galeria.length ? " com-galeria" : "") + '">' + htmlGaleria(im.galeria, lang) +
+    return '<section class="card imovel' + (im.galeria && im.galeria.length ? " com-galeria" : "") + '">' + htmlGaleria(im.galeria, ui, lang) +
       '<p class="eyebrow">' + esc(ui.seu_imovel[lang]) + "</p>" +
       "<h2>" + esc(im.nome) + "</h2>" +
       '<p class="endereco">' + esc(im.endereco) + "</p>" +
@@ -132,6 +170,7 @@
     document.getElementById("conteudo").innerHTML =
       (window.IMOVEL ? htmlImovel(im, d.ui, lang) : "") +
       htmlGuia(d.guia, d.ui, lang) + htmlEventos(d.eventos, d.ui, lang) + guiaCats;
+    ligarGaleria();
   }
 
   function iniciar() {

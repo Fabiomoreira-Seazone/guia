@@ -102,6 +102,21 @@ h3 { font-size: 17px; margin: 0 0 4px; }
 }
 .galeria img:only-child { flex-basis: 100%; width: 100%; }
 .galeria:focus-visible { outline: 3px solid var(--sz-coral); outline-offset: -3px; }
+.galeria-wrap { position: relative; }
+.seta {
+  position: absolute; top: calc(50% - 30px); width: 40px; height: 40px; border-radius: 50%;
+  border: 0; background: rgba(255, 255, 255, .92); color: #10203d; font: 700 26px/1 var(--font);
+  display: grid; place-items: center; padding: 0 0 3px; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(7, 14, 49, .25);
+}
+.seta.ant { left: -8px; }
+.seta.prox { right: -8px; }
+.seta:disabled { opacity: 0; pointer-events: none; }
+.seta:focus-visible { outline: 3px solid var(--sz-coral); outline-offset: 2px; }
+.pontos { display: flex; justify-content: center; gap: 6px; margin: -8px 0 12px; }
+.pontos span { width: 7px; height: 7px; border-radius: 50%; background: var(--line); transition: background .2s, width .2s; }
+.pontos span.ativo { width: 18px; border-radius: 4px; background: var(--accent); }
+@media (prefers-reduced-motion: reduce) { .pontos span { transition: none; } }
 .foto { margin: 8px 0 10px; }
 .foto img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
 .foto figcaption { font-size: 12px; color: var(--muted); margin-top: 4px; }
