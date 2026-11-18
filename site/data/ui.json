@@ -23,6 +23,8 @@
   "apartamento": {"pt": "Apartamento", "es": "Departamento", "en": "Apartment"},
   "sua_vaga": {"pt": "Sua vaga de garagem:", "es": "Tu plaza de cochera:", "en": "Your parking spot:"},
   "lixo": {"pt": "Lixo", "es": "Basura", "en": "Trash"},
+  "enxoval": {"pt": "O que deixamos para você", "es": "Lo que dejamos para ti", "en": "What we provide"},
+  "enxoval_itens": {"pt": "1 toalha de banho por hóspede.|1 toalha de rosto por banheiro.|Papel higiênico suficiente para a chegada. Se precisar de mais, a reposição fica por conta do hóspede.", "es": "1 toalla de baño por huésped.|1 toalla de manos por baño.|Papel higiénico suficiente para la llegada. Si necesitas más, la reposición corre por cuenta del huésped.", "en": "1 bath towel per guest.|1 hand towel per bathroom.|Enough toilet paper for your arrival. If you need more, restocking is up to the guest."},
   "regras": {"pt": "Regras da casa", "es": "Reglas de la casa", "en": "House rules"},
   "contato": {"pt": "Fale com a gente pelo WhatsApp", "es": "Habla con nosotros por WhatsApp", "en": "Chat with us on WhatsApp"},
   "contato_anfitriao": {"pt": "Falar com o anfitrião", "es": "Hablar con el anfitrión", "en": "Chat with your host"},

@@ -136,6 +136,7 @@
       "<p>" + esc(im.estacionamento[lang]) + "</p>" +
       (im.estacionamento_maps_url ? botaoMaps(im.estacionamento_maps_url, ui, lang, ui.garagem_maps) : "") +
       (im.lixo ? "<h3>" + esc(ui.lixo[lang]) + "</h3><p>" + esc(im.lixo[lang]) + "</p>" : "") +
+      "<h3>" + esc(ui.enxoval[lang]) + "</h3><ul>" + ui.enxoval_itens[lang].split("|").map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ul>" +
       (regras ? "<h3>" + esc(ui.regras[lang]) + "</h3><ul>" + regras + "</ul>" : "") +
       "<h3>" + esc(ui.contato[lang]) + '</h3><div class="contatos">' +
       (im.contato_whatsapp ? botaoContato("anfitriao", im.contato_whatsapp, ui.contato_anfitriao, ui.contato_anfitriao_desc, lang) : "") +
