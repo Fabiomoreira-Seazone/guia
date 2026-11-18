@@ -16,14 +16,49 @@
      "en": "No smoking inside the apartment."
     },
     {
-     "pt": "Não são permitidas festas nem visitantes além dos hóspedes da reserva.",
-     "es": "No se permiten fiestas ni visitas además de los huéspedes de la reserva.",
-     "en": "No parties or visitors beyond the guests on the booking."
+     "pt": "Festas e som alto não são permitidos.",
+     "es": "No se permiten fiestas ni música alta.",
+     "en": "No parties or loud music."
+    },
+    {
+     "pt": "Somente os hóspedes da reserva podem entrar no apartamento.",
+     "es": "Solo los huéspedes de la reserva pueden entrar al apartamento.",
+     "en": "Only the guests on the booking may enter the apartment."
+    },
+    {
+     "pt": "Não jogue papel ou lixo no vaso sanitário. Em caso de entupimento, há cobrança.",
+     "es": "No tires papel ni basura al inodoro. En caso de obstrucción, se cobrará.",
+     "en": "Do not flush paper or trash down the toilet. Blockages will be charged."
+    },
+    {
+     "pt": "Não estenda roupas ou toalhas na varanda.",
+     "es": "No cuelgues ropa ni toallas en el balcón.",
+     "en": "Do not hang clothes or towels on the balcony."
+    },
+    {
+     "pt": "Não há troca de roupa de cama nem limpeza diária durante a estadia.",
+     "es": "No hay cambio de ropa de cama ni limpieza diaria durante la estadía.",
+     "en": "There is no linen change or daily cleaning during your stay."
     },
     {
      "pt": "Ao sair, desligue o ar-condicionado e as luzes.",
      "es": "Al salir, apaga el aire acondicionado y las luces.",
      "en": "When you leave, please turn off the A/C and lights."
+    },
+    {
+     "pt": "O descumprimento das regras do condomínio, incluindo multas aplicadas, é de responsabilidade do hóspede.",
+     "es": "El incumplimiento de las reglas del condominio, incluidas las multas, es responsabilidad del huésped.",
+     "en": "Breaking the building's rules, including any fines issued, is the guest's responsibility."
+    },
+    {
+     "pt": "Danos, itens faltando ou perda de chaves serão cobrados após o check-out.",
+     "es": "Los daños, objetos faltantes o pérdida de llaves se cobrarán después del check-out.",
+     "en": "Damage, missing items or lost keys will be charged after check-out."
+    },
+    {
+     "pt": "Quer estender a estadia? Consulte a disponibilidade com a Seazone antes das 11h do dia do check-out.",
+     "es": "¿Quieres extender tu estadía? Consulta la disponibilidad con Seazone antes de las 11h del día del check-out.",
+     "en": "Want to extend your stay? Check availability with Seazone before 11 am on check-out day."
     }
    ],
    "contato_whatsapp": "5548988139992",
@@ -105,14 +140,49 @@
      "en": "No smoking inside the apartment."
     },
     {
-     "pt": "Não são permitidas festas nem visitantes além dos hóspedes da reserva.",
-     "es": "No se permiten fiestas ni visitas además de los huéspedes de la reserva.",
-     "en": "No parties or visitors beyond the guests on the booking."
+     "pt": "Festas e som alto não são permitidos.",
+     "es": "No se permiten fiestas ni música alta.",
+     "en": "No parties or loud music."
+    },
+    {
+     "pt": "Somente os hóspedes da reserva podem entrar no apartamento.",
+     "es": "Solo los huéspedes de la reserva pueden entrar al apartamento.",
+     "en": "Only the guests on the booking may enter the apartment."
+    },
+    {
+     "pt": "Não jogue papel ou lixo no vaso sanitário. Em caso de entupimento, há cobrança.",
+     "es": "No tires papel ni basura al inodoro. En caso de obstrucción, se cobrará.",
+     "en": "Do not flush paper or trash down the toilet. Blockages will be charged."
+    },
+    {
+     "pt": "Não estenda roupas ou toalhas na varanda.",
+     "es": "No cuelgues ropa ni toallas en el balcón.",
+     "en": "Do not hang clothes or towels on the balcony."
+    },
+    {
+     "pt": "Não há troca de roupa de cama nem limpeza diária durante a estadia.",
+     "es": "No hay cambio de ropa de cama ni limpieza diaria durante la estadía.",
+     "en": "There is no linen change or daily cleaning during your stay."
     },
     {
      "pt": "Ao sair, desligue o ar-condicionado e as luzes.",
      "es": "Al salir, apaga el aire acondicionado y las luces.",
      "en": "When you leave, please turn off the A/C and lights."
+    },
+    {
+     "pt": "O descumprimento das regras do condomínio, incluindo multas aplicadas, é de responsabilidade do hóspede.",
+     "es": "El incumplimiento de las reglas del condominio, incluidas las multas, es responsabilidad del huésped.",
+     "en": "Breaking the building's rules, including any fines issued, is the guest's responsibility."
+    },
+    {
+     "pt": "Danos, itens faltando ou perda de chaves serão cobrados após o check-out.",
+     "es": "Los daños, objetos faltantes o pérdida de llaves se cobrarán después del check-out.",
+     "en": "Damage, missing items or lost keys will be charged after check-out."
+    },
+    {
+     "pt": "Quer estender a estadia? Consulte a disponibilidade com a Seazone antes das 11h do dia do check-out.",
+     "es": "¿Quieres extender tu estadía? Consulta la disponibilidad con Seazone antes de las 11h del día del check-out.",
+     "en": "Want to extend your stay? Check availability with Seazone before 11 am on check-out day."
     }
    ],
    "contato_whatsapp": "5548988139992",
@@ -194,14 +264,44 @@
      "en": "No smoking inside the apartment."
     },
     {
-     "pt": "Não são permitidas festas nem visitantes além dos hóspedes da reserva.",
-     "es": "No se permiten fiestas ni visitas además de los huéspedes de la reserva.",
-     "en": "No parties or visitors beyond the guests on the booking."
+     "pt": "Festas e som alto não são permitidos.",
+     "es": "No se permiten fiestas ni música alta.",
+     "en": "No parties or loud music."
+    },
+    {
+     "pt": "Somente os hóspedes da reserva podem entrar no apartamento.",
+     "es": "Solo los huéspedes de la reserva pueden entrar al apartamento.",
+     "en": "Only the guests on the booking may enter the apartment."
+    },
+    {
+     "pt": "Não jogue papel ou lixo no vaso sanitário. Em caso de entupimento, há cobrança.",
+     "es": "No tires papel ni basura al inodoro. En caso de obstrucción, se cobrará.",
+     "en": "Do not flush paper or trash down the toilet. Blockages will be charged."
+    },
+    {
+     "pt": "Não há troca de roupa de cama nem limpeza diária durante a estadia.",
+     "es": "No hay cambio de ropa de cama ni limpieza diaria durante la estadía.",
+     "en": "There is no linen change or daily cleaning during your stay."
     },
     {
      "pt": "Ao sair, desligue o ar-condicionado e as luzes.",
      "es": "Al salir, apaga el aire acondicionado y las luces.",
      "en": "When you leave, please turn off the A/C and lights."
+    },
+    {
+     "pt": "O descumprimento das regras do condomínio, incluindo multas aplicadas, é de responsabilidade do hóspede.",
+     "es": "El incumplimiento de las reglas del condominio, incluidas las multas, es responsabilidad del huésped.",
+     "en": "Breaking the building's rules, including any fines issued, is the guest's responsibility."
+    },
+    {
+     "pt": "Danos, itens faltando ou perda de chaves serão cobrados após o check-out.",
+     "es": "Los daños, objetos faltantes o pérdida de llaves se cobrarán después del check-out.",
+     "en": "Damage, missing items or lost keys will be charged after check-out."
+    },
+    {
+     "pt": "Quer estender a estadia? Consulte a disponibilidade com a Seazone antes das 11h do dia do check-out.",
+     "es": "¿Quieres extender tu estadía? Consulta la disponibilidad con Seazone antes de las 11h del día del check-out.",
+     "en": "Want to extend your stay? Check availability with Seazone before 11 am on check-out day."
     }
    ],
    "contato_whatsapp": "5548988139992",
@@ -283,14 +383,44 @@
      "en": "No smoking inside the apartment."
     },
     {
-     "pt": "Não são permitidas festas nem visitantes além dos hóspedes da reserva.",
-     "es": "No se permiten fiestas ni visitas además de los huéspedes de la reserva.",
-     "en": "No parties or visitors beyond the guests on the booking."
+     "pt": "Festas e som alto não são permitidos.",
+     "es": "No se permiten fiestas ni música alta.",
+     "en": "No parties or loud music."
+    },
+    {
+     "pt": "Somente os hóspedes da reserva podem entrar no apartamento.",
+     "es": "Solo los huéspedes de la reserva pueden entrar al apartamento.",
+     "en": "Only the guests on the booking may enter the apartment."
+    },
+    {
+     "pt": "Não jogue papel ou lixo no vaso sanitário. Em caso de entupimento, há cobrança.",
+     "es": "No tires papel ni basura al inodoro. En caso de obstrucción, se cobrará.",
+     "en": "Do not flush paper or trash down the toilet. Blockages will be charged."
+    },
+    {
+     "pt": "Não há troca de roupa de cama nem limpeza diária durante a estadia.",
+     "es": "No hay cambio de ropa de cama ni limpieza diaria durante la estadía.",
+     "en": "There is no linen change or daily cleaning during your stay."
     },
     {
      "pt": "Ao sair, desligue o ar-condicionado e as luzes.",
      "es": "Al salir, apaga el aire acondicionado y las luces.",
      "en": "When you leave, please turn off the A/C and lights."
+    },
+    {
+     "pt": "O descumprimento das regras do condomínio, incluindo multas aplicadas, é de responsabilidade do hóspede.",
+     "es": "El incumplimiento de las reglas del condominio, incluidas las multas, es responsabilidad del huésped.",
+     "en": "Breaking the building's rules, including any fines issued, is the guest's responsibility."
+    },
+    {
+     "pt": "Danos, itens faltando ou perda de chaves serão cobrados após o check-out.",
+     "es": "Los daños, objetos faltantes o pérdida de llaves se cobrarán después del check-out.",
+     "en": "Damage, missing items or lost keys will be charged after check-out."
+    },
+    {
+     "pt": "Quer estender a estadia? Consulte a disponibilidade com a Seazone antes das 11h do dia do check-out.",
+     "es": "¿Quieres extender tu estadía? Consulta la disponibilidad con Seazone antes de las 11h del día del check-out.",
+     "en": "Want to extend your stay? Check availability with Seazone before 11 am on check-out day."
     }
    ],
    "contato_whatsapp": "5548988139992",
