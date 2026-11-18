@@ -99,6 +99,130 @@
     "en": "Our building has no front desk or luggage storage. If you arrive before check-in or need to stay in town after check-out, the nearest luggage storage is at the Rita Maria bus station. You can also wait on the ground floor, which has several services open to the public, including free Wi-Fi."
    },
    "reconhecimento_facial": true
+  },
+  {
+   "id": "ogd",
+   "nome": "OGD 624",
+   "endereco": "Av. Prof. Othon Gama D'Eça, 624 – Centro, Florianópolis/SC",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Avenida%20Professor%20Othon%20Gama%20D%27E%C3%A7a%2C%20624%2C%20Florian%C3%B3polis%20-%20SC",
+   "acesso_por_link": true,
+   "acesso": {
+    "pt": "No dia do check-in enviamos pelo WhatsApp o link de acesso. Com ele, você entra pela entrada de pedestres usando o leitor de QR Code (e, se tiver vaga, também pela garagem). O apartamento abre com fechadura eletrônica.",
+    "es": "El día del check-in te enviamos por WhatsApp el enlace de acceso. Con él entras por la entrada peatonal usando el lector de código QR (y, si tienes cochera, también por el garaje). El departamento se abre con cerradura electrónica.",
+    "en": "On check-in day we send the access link on WhatsApp. Use it at the QR code reader to enter through the pedestrian entrance (and the garage, if you have a spot). The apartment has an electronic lock."
+   },
+   "como_chegar": {
+    "pt": "O OGD 624 fica na Av. Prof. Othon Gama D'Eça, a duas quadras da Beira-Mar Norte e a cerca de 10 minutos a pé da Praça XV. A entrada de pedestres fica na fachada da avenida, embaixo do letreiro OGD 624.",
+    "es": "El OGD 624 está en la Av. Prof. Othon Gama D'Eça, a dos cuadras de la Beira-Mar Norte y a unos 10 minutos a pie de la Praça XV. La entrada peatonal está en la fachada de la avenida, debajo del letrero OGD 624.",
+    "en": "OGD 624 is on Av. Prof. Othon Gama D'Eça, two blocks from Beira-Mar Norte and about a 10-minute walk from Praça XV. The pedestrian entrance is on the avenue side, under the OGD 624 sign."
+   },
+   "como_chegar_foto": {
+    "src": "img/ogd-fachada.jpg",
+    "alt": {
+     "pt": "Fachada do OGD 624 na Av. Prof. Othon Gama D'Eça, com o letreiro do prédio.",
+     "es": "Fachada del OGD 624 en la Av. Prof. Othon Gama D'Eça, con el letrero del edificio.",
+     "en": "OGD 624 facade on Av. Prof. Othon Gama D'Eça, with the building sign."
+    }
+   },
+   "estacionamento": {
+    "pt": "Confira abaixo como chegar à sua vaga.",
+    "es": "Mira abajo cómo llegar a tu cochera.",
+    "en": "See below how to get to your spot."
+   },
+   "lixo": {
+    "pt": "Fica no andar G. Saindo do elevador, vá à esquerda até a porta de metal onde ficam os coletores. Por gentileza, leve todo o seu lixo ao sair. Obrigado!",
+    "es": "Está en el piso G. Al salir del ascensor, ve a la izquierda hasta la puerta de metal donde están los contenedores. Por favor, lleva toda tu basura al salir. ¡Gracias!",
+    "en": "It's on level G. Leaving the elevator, turn left to the metal door where the bins are. Please take all your trash with you when you leave. Thank you!"
+   },
+   "areas_comuns": [
+    {
+     "nome": {
+      "pt": "Piscina",
+      "es": "Piscina",
+      "en": "Pool"
+     },
+     "texto": {
+      "pt": "No terraço, aberta das 8h às 22h.",
+      "es": "En la terraza, abierta de 8h a 22h.",
+      "en": "On the rooftop, open 8 am to 10 pm."
+     },
+     "foto": {
+      "src": "img/ogd-piscina.jpg",
+      "alt": {
+       "pt": "Piscina no terraço do OGD 624, com vista para a cidade.",
+       "es": "Piscina en la terraza del OGD 624, con vista a la ciudad.",
+       "en": "Rooftop pool at OGD 624 with city views."
+      }
+     }
+    },
+    {
+     "nome": {
+      "pt": "Coworking",
+      "es": "Coworking",
+      "en": "Coworking"
+     },
+     "texto": {
+      "pt": "No térreo, perto dos elevadores. Livre para uso.",
+      "es": "En la planta baja, cerca de los ascensores. De uso libre.",
+      "en": "On the ground floor, by the elevators. Free to use."
+     }
+    },
+    {
+     "nome": {
+      "pt": "Lavanderia coletiva",
+      "es": "Lavandería común",
+      "en": "Shared laundry"
+     },
+     "texto": {
+      "pt": "No pilotis (andar P). Livre para uso, paga por ciclo.",
+      "es": "En el piso P (pilotis). De uso libre, se paga por ciclo.",
+      "en": "On level P (pilotis). Free to use, paid per cycle."
+     }
+    }
+   ],
+   "perto": [
+    {
+     "nome": {
+      "pt": "Droga Raia",
+      "es": "Farmacia Droga Raia",
+      "en": "Droga Raia pharmacy"
+     },
+     "texto": {
+      "pt": "Farmácia na Av. Osmar Cunha, 508, a 2 minutos a pé. Aberta até as 23h.",
+      "es": "Av. Osmar Cunha, 508, a 2 minutos a pie. Abierta hasta las 23h.",
+      "en": "Av. Osmar Cunha, 508, a 2-minute walk. Open until 11 pm."
+     }
+    },
+    {
+     "nome": {
+      "pt": "Supermercado Angeloni",
+      "es": "Supermercado Angeloni",
+      "en": "Angeloni Supermarket"
+     },
+     "texto": {
+      "pt": "R. Esteves Júnior, 307, a uns 4 minutos a pé. Aberto até as 22h.",
+      "es": "R. Esteves Júnior, 307, a unos 4 minutos a pie. Abierto hasta las 22h.",
+      "en": "R. Esteves Júnior, 307, about a 4-minute walk. Open until 10 pm."
+     }
+    },
+    {
+     "nome": {
+      "pt": "O Padeiro de Sevilha",
+      "es": "O Padeiro de Sevilha",
+      "en": "O Padeiro de Sevilha"
+     },
+     "texto": {
+      "pt": "Padaria e café na R. Esteves Júnior, 214, ótimo para o café da manhã. Aberta até as 20h.",
+      "es": "Panadería y café en la R. Esteves Júnior, 214, ideal para el desayuno. Abierta hasta las 20h.",
+      "en": "Bakery and café at R. Esteves Júnior, 214, great for breakfast. Open until 8 pm."
+     }
+    }
+   ],
+   "malas": {
+    "pt": "O prédio não tem portaria nem local para guardar malas. Se você chegar antes do check-in ou precisar ficar na cidade depois do check-out, o guarda-volumes mais próximo é o da Rodoviária Rita Maria. Para esperar, o Beiramar Shopping fica a poucos minutos a pé.",
+    "es": "El edificio no tiene portería ni lugar para guardar maletas. Si llegas antes del check-in o necesitas quedarte en la ciudad después del check-out, la consigna más cercana es la de la Terminal de Buses Rita Maria. Para esperar, el Beiramar Shopping está a pocos minutos a pie.",
+    "en": "The building has no front desk or luggage storage. If you arrive before check-in or need to stay in town after check-out, the nearest luggage storage is at the Rita Maria bus station. To wait, Beiramar Shopping is a few minutes' walk away."
+   }
   }
  ]
 }

@@ -100,9 +100,9 @@
     atualizar();
   }
 
-  function htmlAreas(lista, ui, lang) {
+  function htmlAreas(lista, ui, lang, titulo) {
     if (!lista || !lista.length) return "";
-    return "<h3>" + esc(ui.areas_comuns[lang]) + '</h3><ul class="areas">' + lista.map(function (a) {
+    return "<h3>" + esc((titulo || ui.areas_comuns)[lang]) + '</h3><ul class="areas">' + lista.map(function (a) {
       return "<li>" + (a.foto ? '<img src="' + esc(srcFoto(a.foto.src)) + '" alt="' + esc(a.foto.alt[lang]) + '" loading="lazy">' : "") +
         "<div><strong>" + esc(a.nome[lang]) + "</strong><p>" + esc(a.texto[lang]) + "</p></div></li>";
     }).join("") + "</ul>";
@@ -126,15 +126,19 @@
       "<div><span>" + esc(ui.checkout[lang]) + "</span><strong>" + esc(ui.ate[lang]) + " " + esc(im.checkout) + "</strong></div></div>" +
       '<p class="flex">' + esc(ui.early_late[lang]) + ' <a href="https://wa.me/' + esc(ui.atendimento_numero.pt.replace(/\D/g, "")) +
         '" target="_blank" rel="noopener">' + esc(ui.atendimento_numero[lang]) + "</a></p>" +
-      '<p class="nota">' + esc((im.reconhecimento_facial ? ui.aviso_senha_facial : ui.aviso_senha)[lang]) + "</p>" +
+      '<p class="nota">' + esc((im.acesso_por_link ? ui.aviso_senha_link : im.reconhecimento_facial ? ui.aviso_senha_facial : ui.aviso_senha)[lang]) + "</p>" +
       (im.malas ? "<h3>" + esc(ui.chegou_cedo[lang]) + "</h3><p>" + esc(im.malas[lang]) + "</p>" : "") +
       (im.acesso ? "<h3>" + esc(ui.acesso[lang]) + "</h3><p>" + esc(im.acesso[lang]) + "</p>" : "") +
       htmlAreas(im.areas_comuns, ui, lang) +
-      "<h3>" + esc(ui.como_chegar[lang]) + "</h3><p>" + esc(im.como_chegar[lang]) + "</p>" +
+      htmlAreas(im.perto, ui, lang, ui.perto_do_predio) +
+      "<h3>" + esc(ui.como_chegar[lang]) + "</h3>" + htmlFoto(im.como_chegar_foto, lang) + "<p>" + esc(im.como_chegar[lang]) + "</p>" +
       "<h3>" + esc(ui.estacionamento[lang]) + "</h3>" + htmlFoto(im.estacionamento_foto, lang) +
       (im.vaga ? '<p class="vaga">' + esc(ui.sua_vaga[lang]) + " " + esc(im.vaga[lang]) + "</p>" : "") +
       "<p>" + esc(im.estacionamento[lang]) + "</p>" +
       (im.estacionamento_maps_url ? botaoMaps(im.estacionamento_maps_url, ui, lang, ui.garagem_maps) : "") +
+      (im.estacionamentos_proximos ? '<ul class="areas">' + im.estacionamentos_proximos.map(function (e) {
+        return "<li><div><strong>" + esc(e.nome) + "</strong><p>" + esc(e.texto[lang]) + "</p>" + botaoMaps(e.maps_url, ui, lang) + "</div></li>";
+      }).join("") + "</ul>" : "") +
       (im.lixo ? "<h3>" + esc(ui.lixo[lang]) + "</h3><p>" + esc(im.lixo[lang]) + "</p>" : "") +
       "<h3>" + esc(ui.enxoval[lang]) + "</h3><ul>" + ui.enxoval_itens[lang].split("|").map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ul>" +
       (regras ? "<h3>" + esc(ui.regras[lang]) + "</h3><ul>" + regras + "</ul>" : "") +

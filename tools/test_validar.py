@@ -64,6 +64,11 @@ class TestValidar(unittest.TestCase):
         d["imoveis"]["imoveis"][0]["malas"] = {"pt": "x"}
         self.assertTrue(any("malas" in e for e in validar(d)))
 
+    def test_aceita_aviso_de_senha_com_link_de_acesso_na_ui(self):
+        d = self.d()
+        d["ui"]["aviso_senha_link"] = {"pt": "A senha chega no dia", "es": "La contraseña llega", "en": "Password arrives"}
+        self.assertEqual(validar(d), [])
+
     def test_aceita_aviso_de_senha_com_reconhecimento_facial_na_ui(self):
         d = self.d()
         d["ui"]["aviso_senha_facial"] = {"pt": "A senha chega no dia", "es": "La contraseña llega", "en": "Password arrives"}
@@ -136,6 +141,24 @@ class TestValidar(unittest.TestCase):
 
     def area(self):
         return {"nome": T, "texto": T, "foto": {"src": "img/tvt-piscina.jpg", "alt": T}}
+
+    def test_aceita_estacionamentos_proximos(self):
+        d = self.d()
+        d["imoveis"]["imoveis"][0]["estacionamentos_proximos"] = [
+            {"nome": "Park Land", "texto": T, "maps_url": "https://www.google.com/maps/search/?api=1&query=Park"}]
+        self.assertEqual(validar(d), [])
+
+    def test_rejeita_estacionamento_proximo_com_maps_invalido(self):
+        d = self.d()
+        d["imoveis"]["imoveis"][0]["estacionamentos_proximos"] = [
+            {"nome": "Park Land", "texto": T, "maps_url": "http://x.com"}]
+        self.assertTrue(any("estacionamentos_proximos[0]" in e for e in validar(d)))
+
+    def test_rejeita_estacionamento_proximo_sem_idioma(self):
+        d = self.d()
+        d["imoveis"]["imoveis"][0]["estacionamentos_proximos"] = [
+            {"nome": "Park Land", "texto": {"pt": "a"}, "maps_url": "https://www.google.com/maps/search/?api=1&query=P"}]
+        self.assertTrue(any("estacionamentos_proximos[0].texto" in e for e in validar(d)))
 
     def test_aceita_areas_comuns_em_lista(self):
         d = self.com_predio()

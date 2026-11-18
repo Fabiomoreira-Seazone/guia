@@ -9,7 +9,7 @@ IDIOMAS = ("pt", "es", "en")
 PROIBIDO = re.compile(r"senha|password|contraseña|(?<!free )wi-?fi(?!\s+(grátis|gratis|gratuit[oa]))", re.I)
 MAPS = ("https://www.google.com/maps/", "https://maps.app.goo.gl/")
 # Única chave da UI autorizada a falar de senha ("a senha é enviada pelo WhatsApp").
-UI_LIBERADA = {"aviso_senha", "aviso_senha_facial"}
+UI_LIBERADA = {"aviso_senha", "aviso_senha_facial", "aviso_senha_link"}
 TEXTOS = {"titulo", "descricao", "nome_traduzido", "como_chegar", "estacionamento"}
 
 
@@ -103,10 +103,20 @@ def validar(dados):
                     _texto(a.get("texto"), f"{onde}.areas_comuns[{j}].texto", erros)
                     if "foto" in a:
                         _foto(a["foto"], f"{onde}.areas_comuns[{j}].foto", erros)
+        for j, a in enumerate(ef.get("perto", [])):
+            _texto(a.get("nome"), f"{onde}.perto[{j}].nome", erros)
+            _texto(a.get("texto"), f"{onde}.perto[{j}].texto", erros)
+        if "como_chegar_foto" in ef:
+            _foto(ef["como_chegar_foto"], f"{onde}.como_chegar_foto", erros)
         if "estacionamento_foto" in ef:
             _foto(ef["estacionamento_foto"], f"{onde}.estacionamento_foto", erros)
         for j, f in enumerate(ef.get("galeria", [])):
             _foto(f, f"{onde}.galeria[{j}]", erros)
+        for j, e in enumerate(ef.get("estacionamentos_proximos", [])):
+            if not str(e.get("nome", "")).strip():
+                erros.append(f"{onde}.estacionamentos_proximos[{j}]: falta nome")
+            _texto(e.get("texto"), f"{onde}.estacionamentos_proximos[{j}].texto", erros)
+            _maps(e.get("maps_url"), f"{onde}.estacionamentos_proximos[{j}]", erros)
         if "estacionamento_maps_url" in ef:
             _maps(ef["estacionamento_maps_url"], f"{onde}.estacionamento", erros)
         for j, r in enumerate(im.get("regras", [])):
@@ -124,7 +134,7 @@ def main():
             erros.append(f"falta a página site/{im['codigo']}/index.html")
     for p in dados["predios"].get("predios", []) + dados["imoveis"].get("imoveis", []):
         areas = p.get("areas_comuns") if isinstance(p.get("areas_comuns"), list) else []
-        fotos = [p.get("estacionamento_foto") or {}] + p.get("galeria", []) + [a.get("foto") or {} for a in areas]
+        fotos = [p.get("estacionamento_foto") or {}, p.get("como_chegar_foto") or {}] + p.get("galeria", []) + [a.get("foto") or {} for a in areas]
         for src in filter(None, (f.get("src") for f in fotos)):
             if not (site / src).exists():
                 erros.append(f"falta o arquivo de foto site/{src}")
