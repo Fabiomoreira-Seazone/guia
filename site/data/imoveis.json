@@ -731,9 +731,9 @@
     {
      "src": "img/ogd0704-quarto.jpg",
      "alt": {
-      "pt": "Cama queen com roupa de cama branca.",
-      "es": "Cama queen con ropa de cama blanca.",
-      "en": "Queen bed with white linens."
+      "pt": "Estúdio com cama queen e sofá.",
+      "es": "Estudio con cama queen y sofá.",
+      "en": "Studio with queen bed and sofa."
      }
     },
     {
@@ -747,9 +747,9 @@
     {
      "src": "img/ogd0704-mesa.jpg",
      "alt": {
-      "pt": "Mesa de jantar junto à janela.",
-      "es": "Mesa de comedor junto a la ventana.",
-      "en": "Dining table by the window."
+      "pt": "Mesa de jantar junto à janela, com Smart TV.",
+      "es": "Mesa de comedor junto a la ventana, con Smart TV.",
+      "en": "Dining table by the window, with smart TV."
      }
     },
     {
@@ -771,9 +771,9 @@
     {
      "src": "img/ogd0704-banheiro.jpg",
      "alt": {
-      "pt": "Banheiro com bancada e espelho.",
-      "es": "Baño con mesada y espejo.",
-      "en": "Bathroom with vanity and mirror."
+      "pt": "Banheiro com bancada e toalheiro aquecido.",
+      "es": "Baño con mesada y toallero térmico.",
+      "en": "Bathroom with vanity and heated towel rail."
      }
     }
    ]
